@@ -8,6 +8,8 @@ import { useIsSSR } from "@react-aria/ssr";
 import clsx from "clsx";
 
 import { SunFilledIcon, MoonFilledIcon } from "@/components/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 export interface ThemeSwitchProps {
   className?: string;
@@ -71,9 +73,9 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
         })}
       >
         {!isSelected || isSSR ? (
-          <SunFilledIcon size={22} />
+          <FontAwesomeIcon color={"#8a8343"} icon={faSun} size={"xl"} />
         ) : (
-          <MoonFilledIcon size={22} />
+          <FontAwesomeIcon color={"#5757a3"} icon={faMoon} size={"xl"} />
         )}
       </div>
     </Component>
