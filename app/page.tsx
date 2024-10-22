@@ -64,7 +64,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("/imgs/bg1.jpeg")',
+            backgroundImage: 'url("/imgs/bg2.JPG")',
             backgroundAttachment: "fixed", // This creates the parallax effect
             backgroundPosition: "center",
             backgroundSize: "cover",
@@ -92,7 +92,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("/imgs/bg1.jpeg")',
+            backgroundImage: 'url("/imgs/bg3.JPG")',
             backgroundAttachment: "fixed", // This creates the parallax effect
             backgroundPosition: "center",
             backgroundSize: "cover",
