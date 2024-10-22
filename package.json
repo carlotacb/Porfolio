@@ -33,7 +33,9 @@
 		"next": "14.2.4",
 		"next-themes": "^0.2.1",
 		"react": "18.3.1",
-		"react-dom": "18.3.1"
+		"react-dom": "18.3.1",
+		"react-typewriter-effect": "^1.1.0",
+		"typewriter-effect": "^2.21.0"
 	},
 	"devDependencies": {
 		"@types/node": "20.5.7",
