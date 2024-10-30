@@ -24,12 +24,12 @@ export default function Home() {
           <br />
           <br />
           <span className={title({ size: "sm" })}>I&#39;m&nbsp;</span>
-          <span className={title({ color: "blue", size: "sm" })}>
+          <span className={title({ color: "cyan", size: "sm" })}>
             Carlota&nbsp;
           </span>
-          <span className={title({ color: "blue", size: "sm" })}>C</span>
+          <span className={title({ color: "cyan", size: "sm" })}>C</span>
           <span className={title({ size: "sm" })}>atot&nbsp;</span>
-          <span className={title({ color: "blue", size: "sm" })}>B</span>
+          <span className={title({ color: "cyan", size: "sm" })}>B</span>
           <span className={title({ size: "sm" })}>ragós</span>
           <br />
           <br />
