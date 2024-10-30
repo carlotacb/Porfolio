@@ -115,14 +115,18 @@ export const Navbar = () => {
             size={"xl"}
           />
         </Link>
-        <Link isExternal aria-label="GitHub" href={siteConfig.links.instagram}>
+        <Link
+          isExternal
+          aria-label="Instagram"
+          href={siteConfig.links.instagram}
+        >
           <FontAwesomeIcon
             className="text-default-500"
             icon={faInstagram}
             size={"xl"}
           />
         </Link>
-        <Link isExternal aria-label="GitHub" href={siteConfig.links.mail}>
+        <Link isExternal aria-label="Email" href={siteConfig.links.mail}>
           <FontAwesomeIcon
             className="text-default-500"
             icon={faEnvelope}

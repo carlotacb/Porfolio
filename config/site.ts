@@ -43,6 +43,6 @@ export const siteConfig = {
     github: "https://github.com/carlotacb",
     linkedin: "https://es.linkedin.com/in/carlotacb",
     mail: "mailto:carlota.catot@gmail.com",
-    instagram: "",
+    instagram: "https://www.instagram.com/charlietotb",
   },
 };

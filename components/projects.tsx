@@ -21,7 +21,7 @@ export const Projects = () => {
     <>
       <TitleSection
         color={"blue"}
-        textColor={"My"}
+        textColor={"Some"}
         textNoColor={"projects 👩🏻‍💻"}
       />
       <div className="flex flex-col items-center gap-8">

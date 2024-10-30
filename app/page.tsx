@@ -6,6 +6,7 @@ import { title } from "@/components/primitives";
 import { AboutMe } from "@/components/about-me";
 import { Timeline } from "@/components/timeline";
 import { Projects } from "@/components/projects";
+import { Skills } from "@/components/skills";
 
 export default function Home() {
   return (
@@ -62,7 +63,7 @@ export default function Home() {
       <div className="relative w-full py-20 overflow-hidden">
         {/* Background Image with Parallax Effect */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 w-full bg-cover bg-center"
           style={{
             backgroundImage: 'url("/imgs/bg2.JPG")',
             backgroundAttachment: "fixed", // This creates the parallax effect
@@ -75,11 +76,7 @@ export default function Home() {
 
         <div className="flex items-center justify-center relative z-10">
           {/* Relative positioning to keep text above the background */}
-          <div className="inline-block max-w-xl text-center">
-            <span className={title({ color: "blue", size: "sm" })}>
-              My Skills
-            </span>
-          </div>
+          <Skills />
         </div>
       </div>
 
@@ -104,8 +101,10 @@ export default function Home() {
         <div className="flex items-center justify-center relative z-10">
           {/* Relative positioning to keep text above the background */}
           <div className="inline-block max-w-xl text-center">
-            <span className={title({ color: "blue", size: "sm" })}>
-              Hobbies and Interests
+            <span className={title({ size: "sm" })}>Hobbies</span>
+            <span className={title({ color: "cyan", size: "sm" })}>
+              {" "}
+              & Interests
             </span>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { Card, CardBody } from "@nextui-org/react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useRef } from "react";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 import { title } from "@/components/primitives";
 
@@ -21,10 +22,32 @@ export function TitleSection(props: {
 
   return (
     <div className="flex justify-center mb-10">
-      <span className={title({ color: color, size: "sm" })}>
+      <span className={title({ color: color, size: "md" })}>
         {textColor}&nbsp;
       </span>
-      <span className={title({ size: "sm" })}>{textNoColor}</span>
+      <span className={title({ size: "md" })}>{textNoColor}</span>
+    </div>
+  );
+}
+
+export function TitleSectionReverse(props: {
+  color:
+    | "violet"
+    | "yellow"
+    | "blue"
+    | "cyan"
+    | "green"
+    | "pink"
+    | "foreground";
+  textColor: string;
+  textNoColor: string;
+}) {
+  const { textColor, textNoColor, color } = props;
+
+  return (
+    <div className="flex justify-center mb-10">
+      <span className={title({ size: "sm" })}>{textNoColor}&nbsp;</span>
+      <span className={title({ color: color, size: "sm" })}>{textColor}</span>
     </div>
   );
 }
@@ -54,8 +77,9 @@ export function ItemWithIcon(props: {
   icon: IconProp;
   text: string;
   targetNumber?: number;
+  link?: string;
 }) {
-  const { icon, text, targetNumber } = props;
+  const { icon, text, targetNumber, link } = props;
   const counterRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -81,9 +105,27 @@ export function ItemWithIcon(props: {
           </span>
         ) : null}
       </div>
-      <div className="text-center">
-        <div className="text-base">{text}</div>
-      </div>
+      {link ? (
+        <div className="text-center">
+          <a
+            className="text-base hover:font-bold hover:text-blue-400"
+            href={link}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {text}
+            <FontAwesomeIcon
+              className="ml-2"
+              icon={faArrowUpRightFromSquare}
+              size="xs"
+            />
+          </a>
+        </div>
+      ) : (
+        <div className="text-center">
+          <div className="text-base">{text}</div>
+        </div>
+      )}
     </div>
   );
 }
