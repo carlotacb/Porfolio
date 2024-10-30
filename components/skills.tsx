@@ -1,4 +1,4 @@
-import { Tooltip } from "@nextui-org/react";
+import { Chip, Tooltip } from "@nextui-org/react";
 
 import {
   ContentBlock,
@@ -218,42 +218,56 @@ export const Skills = () => {
 
           <span className="text-lg">Languages</span>
           <div className="flex flex-wrap gap-8 justify-start mt-4">
-            <Tooltip
-              closeDelay={1000}
-              color={"foreground"}
-              content="Native catalan"
-              offset={10}
-              showArrow={true}
-            >
-              <img alt="cat" className="size-14" src="/icons/flags/cat.svg" />
-            </Tooltip>
-            <Tooltip
-              closeDelay={1000}
-              color={"foreground"}
-              content="Native spanish"
-              offset={10}
-              showArrow={true}
-            >
-              <img alt="cat" className="size-14" src="/icons/flags/sp.svg" />
-            </Tooltip>
-            <Tooltip
-              closeDelay={1000}
-              color={"foreground"}
-              content="Advanced english"
-              offset={10}
-              showArrow={true}
-            >
-              <img alt="cat" className="size-14" src="/icons/flags/uk.svg" />
-            </Tooltip>
-            <Tooltip
-              closeDelay={1000}
-              color={"foreground"}
-              content="Basic german"
-              offset={10}
-              showArrow={true}
-            >
-              <img alt="cat" className="size-14" src="/icons/flags/ger.svg" />
-            </Tooltip>
+            <div className="flex flex-col items-center">
+              <Chip radius="sm">Native</Chip>
+              <Tooltip
+                closeDelay={1000}
+                color={"foreground"}
+                content="Native catalan"
+                offset={10}
+                showArrow={true}
+              >
+                <img alt="cat" className="size-14" src="/icons/flags/cat.svg" />
+              </Tooltip>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <Chip radius="sm">Native</Chip>
+              <Tooltip
+                closeDelay={1000}
+                color={"foreground"}
+                content="Native spanish"
+                offset={10}
+                showArrow={true}
+              >
+                <img alt="cat" className="size-14" src="/icons/flags/sp.svg" />
+              </Tooltip>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <Chip radius="sm">B2/C1</Chip>
+              <Tooltip
+                closeDelay={1000}
+                color={"foreground"}
+                content="Advanced english"
+                offset={10}
+                showArrow={true}
+              >
+                <img alt="cat" className="size-14" src="/icons/flags/uk.svg" />
+              </Tooltip>
+            </div>
+            <div className="flex flex-col items-center">
+              <Chip radius="sm">Basic</Chip>
+              <Tooltip
+                closeDelay={1000}
+                color={"foreground"}
+                content="Basic german"
+                offset={10}
+                showArrow={true}
+              >
+                <img alt="cat" className="size-14" src="/icons/flags/ger.svg" />
+              </Tooltip>
+            </div>
           </div>
         </ContentBlock>
       </div>
