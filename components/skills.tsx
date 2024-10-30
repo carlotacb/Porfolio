@@ -15,7 +15,9 @@ export const Skills = () => {
       />
       <div className="flex flex-col items-center gap-8 container px-6">
         <ContentBlock>
-          <span className="text-lg">Programming Languages</span>
+          <Chip color="default" radius={"sm"} size={"lg"} variant="flat">
+            Programming Languages
+          </Chip>
           <div className="flex flex-wrap gap-8 justify-start mt-4 mb-9">
             <Tooltip
               closeDelay={1000}
@@ -90,7 +92,9 @@ export const Skills = () => {
             </Tooltip>
           </div>
 
-          <span className="text-lg">Frameworks</span>
+          <Chip color="default" radius={"sm"} size={"lg"} variant="flat">
+            Frameworks
+          </Chip>
           <div className="flex flex-wrap gap-8 justify-start mt-4 mb-9">
             <Tooltip
               closeDelay={1000}
@@ -133,7 +137,9 @@ export const Skills = () => {
             </Tooltip>
           </div>
 
-          <span className="text-lg">Miscellaneous</span>
+          <Chip color="default" radius={"sm"} size={"lg"} variant="flat">
+            Miscellaneous
+          </Chip>
           <div className="flex flex-wrap gap-8 justify-start mt-4 mb-9">
             <Tooltip
               closeDelay={1000}
@@ -165,6 +171,19 @@ export const Skills = () => {
             <Tooltip
               closeDelay={1000}
               color={"foreground"}
+              content="Styled Components"
+              offset={10}
+              showArrow={true}
+            >
+              <img
+                alt="styledcomponents"
+                className="size-14"
+                src="/icons/misc/styledcomponents.svg"
+              />
+            </Tooltip>
+            <Tooltip
+              closeDelay={1000}
+              color={"foreground"}
               content="Figma"
               offset={10}
               showArrow={true}
@@ -175,9 +194,37 @@ export const Skills = () => {
                 src="/icons/misc/figma.svg"
               />
             </Tooltip>
+            <Tooltip
+              closeDelay={1000}
+              color={"foreground"}
+              content="Markdown"
+              offset={10}
+              showArrow={true}
+            >
+              <img
+                alt="markdown"
+                className="size-14"
+                src="/icons/misc/markdown.svg"
+              />
+            </Tooltip>
+            <Tooltip
+              closeDelay={1000}
+              color={"foreground"}
+              content="LaTex"
+              offset={10}
+              showArrow={true}
+            >
+              <img
+                alt="latex"
+                className="size-14"
+                src="/icons/misc/latex.svg"
+              />
+            </Tooltip>
           </div>
 
-          <span className="text-lg">DevOps</span>
+          <Chip color="default" radius={"sm"} size={"lg"} variant="flat">
+            DevOps
+          </Chip>
           <div className="flex flex-wrap gap-8 justify-start mt-4 mb-9">
             <Tooltip
               closeDelay={1000}
@@ -216,10 +263,11 @@ export const Skills = () => {
             </Tooltip>
           </div>
 
-          <span className="text-lg">Languages</span>
+          <Chip color="default" radius={"sm"} size={"lg"} variant="flat">
+            Languages
+          </Chip>
           <div className="flex flex-wrap gap-8 justify-start mt-4">
             <div className="flex flex-col items-center">
-              <Chip radius="sm">Native</Chip>
               <Tooltip
                 closeDelay={1000}
                 color={"foreground"}
@@ -229,10 +277,12 @@ export const Skills = () => {
               >
                 <img alt="cat" className="size-14" src="/icons/flags/cat.svg" />
               </Tooltip>
+              <Chip radius="sm" size="sm" variant="bordered">
+                Native
+              </Chip>
             </div>
 
             <div className="flex flex-col items-center">
-              <Chip radius="sm">Native</Chip>
               <Tooltip
                 closeDelay={1000}
                 color={"foreground"}
@@ -242,10 +292,12 @@ export const Skills = () => {
               >
                 <img alt="cat" className="size-14" src="/icons/flags/sp.svg" />
               </Tooltip>
+              <Chip radius="sm" size="sm" variant="bordered">
+                Native
+              </Chip>
             </div>
 
             <div className="flex flex-col items-center">
-              <Chip radius="sm">B2/C1</Chip>
               <Tooltip
                 closeDelay={1000}
                 color={"foreground"}
@@ -255,9 +307,11 @@ export const Skills = () => {
               >
                 <img alt="cat" className="size-14" src="/icons/flags/uk.svg" />
               </Tooltip>
+              <Chip radius="sm" size="sm" variant="bordered">
+                B2/C1
+              </Chip>
             </div>
             <div className="flex flex-col items-center">
-              <Chip radius="sm">Basic</Chip>
               <Tooltip
                 closeDelay={1000}
                 color={"foreground"}
@@ -267,6 +321,9 @@ export const Skills = () => {
               >
                 <img alt="cat" className="size-14" src="/icons/flags/ger.svg" />
               </Tooltip>
+              <Chip radius="sm" size="sm" variant="bordered">
+                Basic
+              </Chip>
             </div>
           </div>
         </ContentBlock>
