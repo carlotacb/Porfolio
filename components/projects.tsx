@@ -1,20 +1,5 @@
-import {
-  faBirthdayCake,
-  faGraduationCap,
-  faLaptopCode,
-  faMap,
-  faMusic,
-  faPeopleGroup,
-  faPersonChalkboard,
-  faPizzaSlice,
-} from "@fortawesome/free-solid-svg-icons";
-
-import {
-  CardWithText,
-  ContentBlock,
-  ItemWithIcon,
-  TitleSection,
-} from "@/components/genericComponents";
+import { ProjectCard, TitleSection } from "@/components/genericComponents";
+import { MyProjectList } from "@/public/data/Projects";
 
 export const Projects = () => {
   return (
@@ -24,8 +9,18 @@ export const Projects = () => {
         textColor={"Some"}
         textNoColor={"projects 👩🏻‍💻"}
       />
-      <div className="flex flex-col items-center gap-8">
-        Here will be some of the projects I have worked on
+      <div className="flex flex-wrap justify-center gap-4 max-w-6xl">
+        {MyProjectList.map((project, index) => (
+          <ProjectCard
+            key={index}
+            GHLink={project.GHLink}
+            LanguagesIcons={project.LanguagesIcons}
+            description={project.description}
+            img={project.img}
+            projectName={project.projectName}
+            type={project.type}
+          />
+        ))}
       </div>
     </>
   );

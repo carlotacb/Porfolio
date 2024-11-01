@@ -2,6 +2,7 @@ import { Chip, Tooltip } from "@nextui-org/react";
 
 import {
   ContentBlock,
+  IconWithTooltip,
   TitleSectionReverse,
 } from "@/components/genericComponents";
 
@@ -19,77 +20,34 @@ export const Skills = () => {
             Programming Languages
           </Chip>
           <div className="flex flex-wrap gap-8 justify-start mt-4 mb-9">
-            <Tooltip
-              closeDelay={1000}
-              color={"foreground"}
-              content="Python"
-              offset={10}
-              showArrow={true}
-            >
-              <img
-                alt="python"
-                className="size-14"
-                src="/icons/langs/python.svg"
-              />
-            </Tooltip>
-            <Tooltip
-              closeDelay={1000}
-              color={"foreground"}
-              content="JavaScript"
-              offset={10}
-              showArrow={true}
-            >
-              <img alt="js" className="size-14" src="/icons/langs/js.svg" />
-            </Tooltip>
-            <Tooltip
-              closeDelay={1000}
-              color={"foreground"}
-              content="TypeScript"
-              offset={10}
-              showArrow={true}
-            >
-              <img alt="ts" className="size-14" src="/icons/langs/ts.svg" />
-            </Tooltip>
-            <Tooltip
-              closeDelay={1000}
-              color={"foreground"}
-              content="Java"
-              offset={10}
-              showArrow={true}
-            >
-              <img alt="java" className="size-14" src="/icons/langs/java.svg" />
-            </Tooltip>
-            <Tooltip
-              closeDelay={1000}
-              color={"foreground"}
-              content="SQL"
-              offset={10}
-              showArrow={true}
-            >
-              <img alt="sql" className="size-14" src="/icons/langs/sql.svg" />
-            </Tooltip>
-            <Tooltip
-              closeDelay={1000}
-              color={"foreground"}
-              content="C++"
-              offset={10}
-              showArrow={true}
-            >
-              <img
-                alt="cplusplus"
-                className="size-14"
-                src="/icons/langs/cplusplus.svg"
-              />
-            </Tooltip>
-            <Tooltip
-              closeDelay={1000}
-              color={"foreground"}
-              content="Golang"
-              offset={10}
-              showArrow={true}
-            >
-              <img alt="go" className="size-14" src="/icons/langs/go.svg" />
-            </Tooltip>
+            <IconWithTooltip
+              iconPath={"/icons/langs/python.svg"}
+              tooltipText={"Python"}
+            />
+            <IconWithTooltip
+              iconPath={"/icons/langs/js.svg"}
+              tooltipText={"JavaScript"}
+            />
+            <IconWithTooltip
+              iconPath={"/icons/langs/ts.svg"}
+              tooltipText={"TypeScript"}
+            />
+            <IconWithTooltip
+              iconPath={"/icons/langs/java.svg"}
+              tooltipText={"Java"}
+            />
+            <IconWithTooltip
+              iconPath={"/icons/langs/sql.svg"}
+              tooltipText={"SQL"}
+            />
+            <IconWithTooltip
+              iconPath={"/icons/langs/cplusplus.svg"}
+              tooltipText={"C++"}
+            />
+            <IconWithTooltip
+              iconPath={"/icons/langs/go.svg"}
+              tooltipText={"Golang"}
+            />
           </div>
 
           <Chip color="default" radius={"sm"} size={"lg"} variant="flat">
