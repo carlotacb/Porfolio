@@ -271,7 +271,7 @@ export const Skills = () => {
               <Tooltip
                 closeDelay={1000}
                 color={"foreground"}
-                content="Native catalan"
+                content="Catalan"
                 offset={10}
                 showArrow={true}
               >
@@ -286,7 +286,7 @@ export const Skills = () => {
               <Tooltip
                 closeDelay={1000}
                 color={"foreground"}
-                content="Native spanish"
+                content="Spanish"
                 offset={10}
                 showArrow={true}
               >
@@ -301,7 +301,7 @@ export const Skills = () => {
               <Tooltip
                 closeDelay={1000}
                 color={"foreground"}
-                content="Advanced english"
+                content="English"
                 offset={10}
                 showArrow={true}
               >
@@ -315,7 +315,7 @@ export const Skills = () => {
               <Tooltip
                 closeDelay={1000}
                 color={"foreground"}
-                content="Basic german"
+                content="German"
                 offset={10}
                 showArrow={true}
               >
