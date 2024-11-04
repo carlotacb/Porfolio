@@ -14,7 +14,7 @@ export const Projects = () => {
           <ProjectCard
             key={index}
             GHLink={project.GHLink}
-            LanguagesIcons={project.LanguagesIcons}
+            Languages={project.Languages}
             description={project.description}
             img={project.img}
             projectName={project.projectName}

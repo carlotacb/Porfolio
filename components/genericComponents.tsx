@@ -6,11 +6,19 @@ import {
   CardFooter,
   Image,
   Chip,
+  Button,
 } from "@nextui-org/react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useRef } from "react";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faGamepad,
+  faGlobe,
+  faLaptopCode,
+  faMobileScreenButton,
+  faTabletScreenButton,
+} from "@fortawesome/free-solid-svg-icons";
 
 import { title } from "@/components/primitives";
 
@@ -158,29 +166,61 @@ export function IconWithTooltip(props: {
   );
 }
 
+function getTypeChip(type: "Game" | "WebApp" | "Website" | "App" | "Other") {
+  let colorVar = "";
+  let iconVar = faLaptopCode;
+
+  if (type === "Website") {
+    iconVar = faGlobe;
+    colorVar = "bg-green-400";
+  } else if (type === "App") {
+    colorVar = "bg-orange-400";
+    iconVar = faMobileScreenButton;
+  } else if (type === "Game") {
+    iconVar = faGamepad;
+    colorVar = "bg-red-400";
+  } else if (type === "WebApp") {
+    colorVar = "bg-blue-400";
+    iconVar = faTabletScreenButton;
+  }
+
+  return (
+    <Chip
+      classNames={{ base: colorVar }}
+      radius="sm"
+      size="sm"
+      startContent={<FontAwesomeIcon className="mr-2 ml-1" icon={iconVar} />}
+      variant="shadow"
+    >
+      {type}
+    </Chip>
+  );
+}
+
 export function ProjectCard(props: {
   type: "Game" | "WebApp" | "Website" | "App" | "Other";
   projectName: string;
-  LanguagesIcons: string[];
+  Languages: {
+    icon: string;
+    tooltip: string;
+  }[];
   img: string;
   description: string;
   GHLink: string;
 }) {
-  const { type, projectName, LanguagesIcons, img, description, GHLink } = props;
+  const { type, projectName, Languages, img, description, GHLink } = props;
 
   return (
     <Card isFooterBlurred className="w-[350px] h-auto">
       <CardHeader className="absolute z-10 top-1 flex-col items-start">
         <div className="flex gap-2">
-          <Chip radius="sm" size="sm" variant="solid">
-            {type}
-          </Chip>
-          {LanguagesIcons.map((icon) => (
+          {getTypeChip(type)}
+          {Languages.map((lang) => (
             <IconWithTooltip
-              key={icon}
-              iconPath={`/icons/${icon}.svg`}
+              key={lang.tooltip}
+              iconPath={`/icons/${lang.icon}.svg`}
               size={"size-6"}
-              tooltipText={icon}
+              tooltipText={lang.tooltip}
             />
           ))}
         </div>
@@ -195,16 +235,19 @@ export function ProjectCard(props: {
         src={`/imgs/projects/${img}`}
       />
       <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
-        <div className="flex justify-between gap-4">
-          <p className="text-tiny text-white/60 ml-2">{description}</p>
-          <a
-            className="cursor-pointer"
+        <p className="text-tiny text-white/60 ml-2">{description}</p>
+        <div>
+          <Button
+            className="px-4 ml-2"
+            endContent={<img alt="git" src="/icons/misc/github.svg" />}
             href={GHLink}
             rel="noreferrer"
+            size="sm"
             target="_blank"
+            variant="shadow"
           >
-            <img alt="git" className="size-14" src="/icons/misc/github.svg" />
-          </a>
+            Code
+          </Button>
         </div>
       </CardFooter>
     </Card>

@@ -1,8 +1,10 @@
 interface Projects {
   type: "Game" | "WebApp" | "Website" | "App" | "Other";
   projectName: string;
-  LanguagesIcons: string[];
-  LanguagesTooltip: string[];
+  Languages: {
+    icon: string;
+    tooltip: string;
+  }[];
   img: string;
   description: string;
   GHLink: string;
@@ -12,8 +14,7 @@ export const MyProjectList: Projects[] = [
   {
     type: "Game",
     projectName: "Lemmings",
-    LanguagesIcons: ["langs/cplusplus"],
-    LanguagesTooltip: ["C++"],
+    Languages: [{ icon: "langs/cplusplus", tooltip: "C++" }],
     img: "lemmings-gameplay.gif",
     description:
       "University project where we made a clone from the popular game Lemmings in C++ with a additional hard mode!",
@@ -22,8 +23,10 @@ export const MyProjectList: Projects[] = [
   {
     type: "Game",
     projectName: "SuperMario GO",
-    LanguagesIcons: ["langs/csharp", "misc/unity"],
-    LanguagesTooltip: ["C#", "Unity"],
+    Languages: [
+      { icon: "langs/csharp", tooltip: "C#" },
+      { icon: "misc/unity", tooltip: "Unity" },
+    ],
     img: "mario-gameplay.gif",
     description:
       "University project made in Unity, we use SuperMario theme to create an amazing game based in Lara Croft GO.",
@@ -32,8 +35,10 @@ export const MyProjectList: Projects[] = [
   {
     type: "Game",
     projectName: "BirdPitch",
-    LanguagesIcons: ["langs/js", "langs/python"],
-    LanguagesTooltip: ["JavaScript", "Python"],
+    Languages: [
+      { icon: "langs/js", tooltip: "JavaScript" },
+      { icon: "langs/python", tooltip: "Python" },
+    ],
     img: "birdpith-gameplay.gif",
     description:
       "Game developed for LauzHack 2018 that works with the voice... Singing! (It doesn't work 100% fine)",
@@ -42,8 +47,12 @@ export const MyProjectList: Projects[] = [
   {
     type: "WebApp",
     projectName: "Coink",
-    LanguagesIcons: ["langs/go", "langs/js", "frameworks/react", "devops/aws"],
-    LanguagesTooltip: ["Golang", "JavaScript", "React", "AWS"],
+    Languages: [
+      { icon: "langs/go", tooltip: "Golang" },
+      { icon: "langs/js", tooltip: "JavaScript" },
+      { icon: "frameworks/react", tooltip: "React" },
+      { icon: "devops/aws", tooltip: "AWS" },
+    ],
     img: "coink.webp",
     description:
       "My bachelor thesis, a webapp aplication based on microservices and React. The github repo is private as it contains secret keys",
@@ -52,8 +61,12 @@ export const MyProjectList: Projects[] = [
   {
     type: "Website",
     projectName: "HFH Landing & Live",
-    LanguagesIcons: ["langs/js", "misc/html", "misc/css", "frameworks/vuejs"],
-    LanguagesTooltip: ["JavaScript", "HTML", "CSS", "VueJS"],
+    Languages: [
+      { icon: "langs/js", tooltip: "JavaScript" },
+      { icon: "misc/html", tooltip: "HTML" },
+      { icon: "misc/css", tooltip: "CSS" },
+      { icon: "frameworks/vuejs", tooltip: "VueJS" },
+    ],
     img: "hackfromhome.webp",
     description:
       "I've create two websites for an online hackathon I've organized (during the covid lockdown) as part of Hackers@UPC team.",
@@ -62,8 +75,7 @@ export const MyProjectList: Projects[] = [
   {
     type: "Game",
     projectName: "StopTheCrown",
-    LanguagesIcons: ["langs/js"],
-    LanguagesTooltip: ["JavaScript"],
+    Languages: [{ icon: "langs/js", tooltip: "JavaScript" }],
     img: "stopthecrown.webp",
     description:
       "WebApp Game created for HackTheBurgh 2020 a game based on papers please! but with a theme completly diferent, the coronavirus!",
@@ -72,21 +84,13 @@ export const MyProjectList: Projects[] = [
   {
     type: "WebApp",
     projectName: "FoodLord",
-    LanguagesIcons: [
-      "langs/js",
-      "langs/python",
-      "frameworks/flask",
-      "frameworks/react",
-      "devops/gcloud",
-      "devops/docker",
-    ],
-    LanguagesTooltip: [
-      "JavaScript",
-      "Python",
-      "Flask",
-      "React",
-      "Google Cloud",
-      "Docker",
+    Languages: [
+      { icon: "langs/js", tooltip: "JavaScript" },
+      { icon: "langs/python", tooltip: "Python" },
+      { icon: "frameworks/flask", tooltip: "Flask" },
+      { icon: "frameworks/react", tooltip: "React" },
+      { icon: "devops/gcloud", tooltip: "Google Cloud" },
+      { icon: "devops/docker", tooltip: "Docker" },
     ],
     img: "foodlord.webp",
     description:
