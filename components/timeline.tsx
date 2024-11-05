@@ -23,7 +23,7 @@ export const Timeline = () => {
         <Tabs
           selectedKey={selected}
           variant={"bordered"}
-          onSelectionChange={setSelected}
+          onSelectionChange={(key) => setSelected(key.toString())}
         >
           <Tab key="professional" title="Working">
             <div className="max-w-7xl px-4 md:min-w-[50rem] lg:min-w-[60rem]">
