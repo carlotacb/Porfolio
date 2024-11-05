@@ -136,6 +136,16 @@ export const ProfessionalTimeline: TimelineItem[] = [
   },
   {
     active: false,
+    company: "HackUPC (Hackers@UPC)",
+    position: "Hackathon director",
+    startDate: "07/2021",
+    endDate: "07/2023",
+    description:
+      "<b>HackUPC 2023</b>: Co‑directed a team of 20+ as well as the organizations’ logistics and finance team, to make the event grow back into a healthy, self‑sustaining organization. <br /><br /><b>HackUPC 2022</b>: Co‑directed a team of 20+ to organize Europe’s largest student hackathon, helping it regain momentum after the pandemic.",
+    icon: "hackers",
+  },
+  {
+    active: false,
     company: "UPC (FIB)",
     position: "Associate professor",
     startDate: "02/2021",
@@ -172,6 +182,15 @@ export const ProfessionalTimeline: TimelineItem[] = [
     website: "https://www.hp.com/es-es/printers/3d-printers.html",
     instagram: "https://www.instagram.com/hpespana/",
     linkedin: "https://www.linkedin.com/company/hp/posts/?feedView=all",
+  },
+  {
+    active: true,
+    company: "HackUPC (Hackers@UPC)",
+    position: "Hackathon organizer",
+    startDate: "02/2019",
+    description:
+      "For 6 editions of HackUPC (2019, 2021, 2022, 2023, 2024 and 2025) and 4 of bitsxlaMarato (2019, 2020, 2021 and 2022).",
+    icon: "hackers",
   },
   {
     active: false,

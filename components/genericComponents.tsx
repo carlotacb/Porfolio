@@ -262,15 +262,12 @@ export function ProjectCard(props: {
   );
 }
 
-export function TimelineIcon(props: {
-  logoFileName: string;
-  bgIconCompleted: string;
-}) {
-  const { logoFileName, bgIconCompleted } = props;
+export function TimelineIcon(props: { logoFileName: string }) {
+  const { logoFileName } = props;
 
   return (
     <div
-      className={`flex items-center justify-center w-10 h-10 rounded-full ${bgIconCompleted} group-[.is-active]:bg-green-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2`}
+      className={`flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-400 group-[.is-active]:bg-sky-200 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2`}
     >
       <img
         alt={logoFileName}
@@ -281,11 +278,7 @@ export function TimelineIcon(props: {
   );
 }
 
-interface TimelinePointProps extends TimelineItem {
-  color: string;
-}
-
-export function TimelinePoint(props: TimelinePointProps) {
+export function TimelinePoint(props: TimelineItem) {
   const {
     active,
     company,
@@ -297,7 +290,6 @@ export function TimelinePoint(props: TimelinePointProps) {
     website,
     instagram,
     linkedin,
-    color,
   } = props;
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -306,22 +298,27 @@ export function TimelinePoint(props: TimelinePointProps) {
       <div
         className={`relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group ${active ? "is-active" : null}`}
       >
-        <TimelineIcon bgIconCompleted={`bg-${color}-200`} logoFileName={icon} />
-        <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-default p-4 rounded shadow">
-          <div className="flex items-center justify-between space-x-2 mb-1">
-            <div className={`font-bold text-${color}-600 text-lg`}>
-              {company}
-            </div>
-            <div className={"flex justify-end"}>
-              <time className="font-caveat font-medium text-sm">
-                {startDate} - {endDate ? endDate : "Present"}
-              </time>
+        <TimelineIcon logoFileName={icon} />
+        <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-default group-[.is-active]:dark:bg-sky-950 group-[.is-active]:bg-sky-200 p-4 rounded shadow">
+          <div className={"flex justify-end"}>
+            <time className="font-caveat font-medium text-sm italic">
+              {startDate} - {endDate ? endDate : "Present"}
+            </time>
+          </div>
+          <div className="flex items-center justify-between space-x-2 mt-[-14px]">
+            <div className={"flex flex-col"}>
+              <div className={"font-bold text-sky-600 text-lg"}>{company}</div>
+              <p className="text-sm">{position}</p>
             </div>
           </div>
-          <div className="flex justify-between items-center mt-2">
-            <p className="text-sm">{position}</p>
-            <Button isIconOnly variant={"light"} onPress={onOpen}>
-              <FontAwesomeIcon icon={faInfoCircle} size={"xl"} />
+          <div className="flex justify-end items-center">
+            <Button
+              isIconOnly
+              color={"primary"}
+              variant={"solid"}
+              onPress={onOpen}
+            >
+              <FontAwesomeIcon icon={faInfoCircle} />
             </Button>
           </div>
         </div>
