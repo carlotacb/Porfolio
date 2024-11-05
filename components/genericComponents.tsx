@@ -7,6 +7,11 @@ import {
   Image,
   Chip,
   Button,
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  useDisclosure,
 } from "@nextui-org/react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,12 +20,15 @@ import {
   faArrowUpRightFromSquare,
   faGamepad,
   faGlobe,
+  faInfoCircle,
   faLaptopCode,
   faMobileScreenButton,
   faTabletScreenButton,
 } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { title } from "@/components/primitives";
+import { TimelineItem } from "@/public/data/Timeline";
 
 export function TitleSection(props: {
   color:
@@ -86,7 +94,7 @@ export function CardWithText(props: { text: string }) {
 export function ContentBlock(props: { children: any }) {
   const { children } = props;
 
-  return <div className="max-w-2xl">{children}</div>;
+  return <div className="max-w-3xl">{children}</div>;
 }
 
 export function ItemWithIcon(props: {
@@ -251,5 +259,128 @@ export function ProjectCard(props: {
         </div>
       </CardFooter>
     </Card>
+  );
+}
+
+export function TimelineIcon(props: {
+  logoFileName: string;
+  bgIconCompleted: string;
+}) {
+  const { logoFileName, bgIconCompleted } = props;
+
+  return (
+    <div
+      className={`flex items-center justify-center w-10 h-10 rounded-full ${bgIconCompleted} group-[.is-active]:bg-green-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2`}
+    >
+      <img
+        alt={logoFileName}
+        className={"w-[60%]"}
+        src={`/imgs/timeline/${logoFileName}.webp`}
+      />
+    </div>
+  );
+}
+
+interface TimelinePointProps extends TimelineItem {
+  color: string;
+}
+
+export function TimelinePoint(props: TimelinePointProps) {
+  const {
+    active,
+    company,
+    position,
+    startDate,
+    endDate,
+    description,
+    icon,
+    website,
+    instagram,
+    linkedin,
+    color,
+  } = props;
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  return (
+    <>
+      <div
+        className={`relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group ${active ? "is-active" : null}`}
+      >
+        <TimelineIcon bgIconCompleted={`bg-${color}-200`} logoFileName={icon} />
+        <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-default p-4 rounded shadow">
+          <div className="flex items-center justify-between space-x-2 mb-1">
+            <div className={`font-bold text-${color}-600 text-lg`}>
+              {company}
+            </div>
+            <div className={"flex justify-end"}>
+              <time className="font-caveat font-medium text-sm">
+                {startDate} - {endDate ? endDate : "Present"}
+              </time>
+            </div>
+          </div>
+          <div className="flex justify-between items-center mt-2">
+            <p className="text-sm">{position}</p>
+            <Button isIconOnly variant={"light"} onPress={onOpen}>
+              <FontAwesomeIcon icon={faInfoCircle} size={"xl"} />
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      <Modal backdrop={"blur"} isOpen={isOpen} onClose={onClose}>
+        <ModalContent>
+          <div className="py-4 px-1">
+            <ModalHeader className="flex gap-3 items-center">
+              <img
+                alt={icon}
+                className={"w-12"}
+                src={`/imgs/timeline/${icon}.webp`}
+              />
+              <div className={"flex flex-col"}>
+                <p className="text-xl">{company}</p>
+                <p className="text-sm font-light italic text-gray-700 dark:text-gray-400">
+                  {position}
+                </p>
+              </div>
+            </ModalHeader>
+            <ModalBody>
+              <p dangerouslySetInnerHTML={{ __html: description }} />
+              <div className="flex justify-end gap-4">
+                {website ? (
+                  <a
+                    className="cursor-pointer"
+                    href={website}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faGlobe} size="xl" />
+                  </a>
+                ) : null}
+                {instagram ? (
+                  <a
+                    className="cursor-pointer"
+                    href={instagram}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faInstagram} size="xl" />
+                  </a>
+                ) : null}
+                {linkedin ? (
+                  <a
+                    className="cursor-pointer"
+                    href={linkedin}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} size="xl" />
+                  </a>
+                ) : null}
+              </div>
+            </ModalBody>
+          </div>
+        </ModalContent>
+      </Modal>
+    </>
   );
 }
