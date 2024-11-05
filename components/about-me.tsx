@@ -6,7 +6,7 @@ import {
   faMusic,
   faPeopleGroup,
   faPersonChalkboard,
-  faPizzaSlice,
+  faTerminal,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -61,7 +61,7 @@ export const AboutMe = () => {
               text={`years dancing`}
             />
             <ItemWithIcon
-              icon={faPizzaSlice}
+              icon={faTerminal}
               targetNumber={20}
               text={`hackathons`}
             />
