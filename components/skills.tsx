@@ -55,7 +55,6 @@ export const Skills = () => {
           </Chip>
           <div className="flex flex-wrap gap-8 justify-start mt-4 mb-9">
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="Django"
               offset={10}
@@ -68,7 +67,6 @@ export const Skills = () => {
               />
             </Tooltip>
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="Next.js"
               offset={10}
@@ -81,7 +79,6 @@ export const Skills = () => {
               />
             </Tooltip>
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="Vue"
               offset={10}
@@ -100,7 +97,6 @@ export const Skills = () => {
           </Chip>
           <div className="flex flex-wrap gap-8 justify-start mt-4 mb-9">
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="Git"
               offset={10}
@@ -109,7 +105,6 @@ export const Skills = () => {
               <img alt="git" className="size-14" src="/icons/misc/git.svg" />
             </Tooltip>
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="HTML"
               offset={10}
@@ -118,7 +113,6 @@ export const Skills = () => {
               <img alt="html" className="size-14" src="/icons/misc/html.svg" />
             </Tooltip>
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="CSS"
               offset={10}
@@ -127,7 +121,6 @@ export const Skills = () => {
               <img alt="css" className="size-14" src="/icons/misc/css.svg" />
             </Tooltip>
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="Styled Components"
               offset={10}
@@ -140,7 +133,6 @@ export const Skills = () => {
               />
             </Tooltip>
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="Figma"
               offset={10}
@@ -153,7 +145,6 @@ export const Skills = () => {
               />
             </Tooltip>
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="Markdown"
               offset={10}
@@ -166,7 +157,6 @@ export const Skills = () => {
               />
             </Tooltip>
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="LaTex"
               offset={10}
@@ -185,7 +175,6 @@ export const Skills = () => {
           </Chip>
           <div className="flex flex-wrap gap-8 justify-start mt-4 mb-9">
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="Amazon Web Services"
               offset={10}
@@ -194,7 +183,6 @@ export const Skills = () => {
               <img alt="aws" className="size-14" src="/icons/devops/aws.svg" />
             </Tooltip>
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="Google Cloud"
               offset={10}
@@ -207,7 +195,6 @@ export const Skills = () => {
               />
             </Tooltip>
             <Tooltip
-              closeDelay={1000}
               color={"foreground"}
               content="Docker"
               offset={10}
@@ -227,7 +214,6 @@ export const Skills = () => {
           <div className="flex flex-wrap gap-8 justify-start mt-4">
             <div className="flex flex-col items-center">
               <Tooltip
-                closeDelay={1000}
                 color={"foreground"}
                 content="Catalan"
                 offset={10}
@@ -242,7 +228,6 @@ export const Skills = () => {
 
             <div className="flex flex-col items-center">
               <Tooltip
-                closeDelay={1000}
                 color={"foreground"}
                 content="Spanish"
                 offset={10}
@@ -257,7 +242,6 @@ export const Skills = () => {
 
             <div className="flex flex-col items-center">
               <Tooltip
-                closeDelay={1000}
                 color={"foreground"}
                 content="English"
                 offset={10}
@@ -271,7 +255,6 @@ export const Skills = () => {
             </div>
             <div className="flex flex-col items-center">
               <Tooltip
-                closeDelay={1000}
                 color={"foreground"}
                 content="German"
                 offset={10}

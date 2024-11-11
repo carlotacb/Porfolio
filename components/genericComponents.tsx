@@ -163,7 +163,6 @@ export function IconWithTooltip(props: {
 
   return (
     <Tooltip
-      closeDelay={1000}
       color={"foreground"}
       content={tooltipText}
       offset={10}
@@ -245,17 +244,16 @@ export function ProjectCard(props: {
       <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
         <p className="text-tiny text-white/60 ml-2">{description}</p>
         <div>
-          <Button
-            className="px-4 ml-2"
-            endContent={<img alt="git" src="/icons/misc/github.svg" />}
-            href={GHLink}
-            rel="noreferrer"
-            size="sm"
-            target="_blank"
-            variant="shadow"
-          >
-            Code
-          </Button>
+          <a href={GHLink} rel="noreferrer" target="_blank">
+            <Button
+              className="px-4 ml-2"
+              endContent={<img alt="git" src="/icons/misc/github.svg" />}
+              size="sm"
+              variant="shadow"
+            >
+              Code
+            </Button>
+          </a>
         </div>
       </CardFooter>
     </Card>
@@ -324,7 +322,12 @@ export function TimelinePoint(props: TimelineItem) {
         </div>
       </div>
 
-      <Modal backdrop={"blur"} isOpen={isOpen} onClose={onClose}>
+      <Modal
+        backdrop={"blur"}
+        isOpen={isOpen}
+        scrollBehavior={"outside"}
+        onClose={onClose}
+      >
         <ModalContent>
           <div className="py-4 px-1">
             <ModalHeader className="flex gap-3 items-center">
