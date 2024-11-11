@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4">
       <div
-        className="absolute top-0 left-0 w-full h-screen bg-cover bg-center bg-fixed"
+        className="absolute top-0 left-0 w-full h-screen bg-cover bg-center"
         style={{
           backgroundImage: 'url("/imgs/bg1.jpeg")',
           opacity: 0.5,
@@ -66,7 +66,6 @@ export default function Home() {
           className="absolute inset-0 w-full bg-cover bg-center"
           style={{
             backgroundImage: 'url("/imgs/bg2.JPG")',
-            backgroundAttachment: "fixed", // This creates the parallax effect
             backgroundPosition: "center",
             backgroundSize: "cover",
             opacity: 0.5,
@@ -90,7 +89,6 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: 'url("/imgs/bg3.JPG")',
-            backgroundAttachment: "fixed", // This creates the parallax effect
             backgroundPosition: "center",
             backgroundSize: "cover",
             opacity: 0.5,
