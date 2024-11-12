@@ -7,6 +7,7 @@ import { AboutMe } from "@/components/about-me";
 import { Timeline } from "@/components/timeline";
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
+import { Hobbies } from "@/components/hobbies";
 
 export default function Home() {
   return (
@@ -98,13 +99,7 @@ export default function Home() {
 
         <div className="flex items-center justify-center relative z-10">
           {/* Relative positioning to keep text above the background */}
-          <div className="inline-block max-w-xl text-center">
-            <span className={title({ size: "sm" })}>Hobbies</span>
-            <span className={title({ color: "cyan", size: "sm" })}>
-              {" "}
-              & Interests
-            </span>
-          </div>
+          <Hobbies />
         </div>
       </div>
 

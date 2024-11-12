@@ -41,8 +41,7 @@ export const EducationTimeline: TimelineItem[] = [
   {
     active: false,
     company: "UPC (FIB)",
-    position:
-      "Bachelor degree in informatics engineering with major in software engineering",
+    position: "Bachelor degree in informatics engineering",
     startDate: "09/2013",
     endDate: "06/2019",
     description:
@@ -136,7 +135,7 @@ export const ProfessionalTimeline: TimelineItem[] = [
   },
   {
     active: false,
-    company: "HackUPC (Hackers@UPC)",
+    company: "HackUPC",
     position: "Hackathon director",
     startDate: "07/2021",
     endDate: "07/2023",
@@ -185,7 +184,7 @@ export const ProfessionalTimeline: TimelineItem[] = [
   },
   {
     active: true,
-    company: "HackUPC (Hackers@UPC)",
+    company: "HackUPC",
     position: "Hackathon organizer",
     startDate: "02/2019",
     description:

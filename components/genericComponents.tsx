@@ -84,7 +84,7 @@ export function CardWithText(props: { text: string }) {
       <CardBody className="p-8">
         <div
           dangerouslySetInnerHTML={{ __html: text }}
-          className="leading-7 text-justify"
+          className="leading-7 text-left"
         />
       </CardBody>
     </Card>
@@ -297,7 +297,7 @@ export function TimelinePoint(props: TimelineItem) {
         className={`relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group ${active ? "is-active" : null}`}
       >
         <TimelineIcon logoFileName={icon} />
-        <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-default group-[.is-active]:dark:bg-sky-950 group-[.is-active]:bg-sky-200 p-4 rounded shadow">
+        <div className="w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] bg-default group-[.is-active]:dark:bg-sky-950 group-[.is-active]:bg-sky-200 p-4 rounded shadow">
           <div className={"flex justify-end"}>
             <time className="font-caveat font-medium text-sm italic">
               {startDate} - {endDate ? endDate : "Present"}
@@ -382,5 +382,42 @@ export function TimelinePoint(props: TimelineItem) {
         </ModalContent>
       </Modal>
     </>
+  );
+}
+
+export function HobbieItem(props: {
+  icon: string;
+  text: string;
+  link?: string;
+  linkText?: string;
+}) {
+  const { icon, text, link, linkText } = props;
+
+  return (
+    <div className="flex flex-col items-center">
+      <img
+        alt={icon}
+        className="size-16 fill-current dark:invert"
+        src={`/icons/hobbies/${icon}.svg`}
+      />
+      <Chip className="mt-2" radius="sm" size="md" variant="solid">
+        {text}{" "}
+        {link ? (
+          <a
+            className="text-base hover:font-bold hover:text-blue-400"
+            href={link}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {linkText}
+            <FontAwesomeIcon
+              className="ml-2"
+              icon={faArrowUpRightFromSquare}
+              size="xs"
+            />
+          </a>
+        ) : null}
+      </Chip>
+    </div>
   );
 }
