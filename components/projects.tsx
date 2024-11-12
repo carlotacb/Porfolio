@@ -1,3 +1,5 @@
+import { Button } from "@nextui-org/react";
+
 import { ProjectCard, TitleSection } from "@/components/genericComponents";
 import { MyProjectList } from "@/public/data/Projects";
 
@@ -6,6 +8,9 @@ export const Projects = () => {
     <>
       <TitleSection
         color={"blue"}
+        subtitle={
+          "I've worked in way more projects but most of them are private, check them all in my GitHub"
+        }
         textColor={"Some"}
         textNoColor={"projects 👩🏻‍💻"}
       />
@@ -21,6 +26,21 @@ export const Projects = () => {
             type={project.type}
           />
         ))}
+        <div className={"mt-6"}>
+          <a
+            href={"https://github.com/carlotacb"}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Button
+              endContent={<img alt="git" src="/icons/misc/github.svg" />}
+              size="lg"
+              variant="shadow"
+            >
+              Go to all my projects
+            </Button>
+          </a>
+        </div>
       </div>
     </>
   );

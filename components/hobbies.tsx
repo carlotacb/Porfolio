@@ -17,7 +17,14 @@ export const Hobbies = () => {
       <div className="flex flex-col items-center gap-8 container px-6">
         <ContentBlock>
           <div className="flex flex-wrap gap-10 justify-center mt-4 mb-9">
-            <HobbieItem icon={"map"} text={"Travelling"} />
+            <HobbieItem icon={"map"} text={"Travel"} />
+            <HobbieItem icon={"camara"} text={"Photography"} />
+            <HobbieItem icon={"dancer"} text={"Dance"} />
+            <HobbieItem icon={"piano"} text={"Piano"} />
+            <HobbieItem icon={"guitar"} text={"Guitar"} />
+            <HobbieItem icon={"skiing"} text={"Ski"} />
+            <HobbieItem icon={"soccer"} text={"Soccer"} />
+            <HobbieItem icon={"events"} text={"Organize events"} />
             <HobbieItem
               icon={"boat"}
               link={
@@ -26,15 +33,6 @@ export const Hobbies = () => {
               linkText={"PER title"}
               text={"Sailing - "}
             />
-            <HobbieItem icon={"car"} text={"Car driving"} />
-            <HobbieItem icon={"motorbike"} text={"Motorbike driving"} />
-            <HobbieItem icon={"camara"} text={"Photography"} />
-            <HobbieItem icon={"dancer"} text={"Dancing"} />
-            <HobbieItem icon={"skiing"} text={"Skiing"} />
-            <HobbieItem icon={"piano"} text={"Piano"} />
-            <HobbieItem icon={"guitar"} text={"Guitar"} />
-            <HobbieItem icon={"soccer"} text={"Soccer"} />
-            <HobbieItem icon={"events"} text={"Organize events"} />
           </div>
         </ContentBlock>
       </div>

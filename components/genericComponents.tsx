@@ -41,15 +41,21 @@ export function TitleSection(props: {
     | "foreground";
   textColor: string;
   textNoColor: string;
+  subtitle?: string;
 }) {
-  const { textColor, textNoColor, color } = props;
+  const { textColor, textNoColor, color, subtitle } = props;
 
   return (
-    <div className="flex justify-center mb-10">
-      <span className={title({ color: color, size: "md" })}>
-        {textColor}&nbsp;
-      </span>
-      <span className={title({ size: "md" })}>{textNoColor}</span>
+    <div className={"mb-10"}>
+      <div className="flex justify-center">
+        <span className={title({ color: color, size: "md" })}>
+          {textColor}&nbsp;
+        </span>
+        <span className={title({ size: "md" })}>{textNoColor}</span>
+      </div>
+      {subtitle ? (
+        <p className={"italic text-center text-gray-400 mt-2"}>{subtitle}</p>
+      ) : null}
     </div>
   );
 }
