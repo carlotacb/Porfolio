@@ -1,14 +1,9 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { IconItem } from "@/public/data/AboutMe";
 
-export function ItemWithIcon(props: {
-  icon: IconProp;
-  text: string;
-  targetNumber?: number;
-  link?: string;
-}) {
+export function ItemWithIcon(props: IconItem) {
   const { icon, text, targetNumber, link } = props;
   const counterRef = useRef<HTMLSpanElement>(null);
 
