@@ -2,7 +2,7 @@ import { Chip, Tooltip } from "@nextui-org/react";
 
 import { iconInformation } from "@/public/data/Skills";
 
-export function IconWithTooltip(props: iconInformation) {
+export function IconWithTooltipWithChip(props: iconInformation) {
   const { iconPath, tooltipText, chipText } = props;
 
   return (

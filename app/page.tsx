@@ -7,7 +7,7 @@ import { AboutMe } from "@/components/about-me/about-me";
 import { Timeline } from "@/components/timeline";
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills/skills";
-import { Hobbies } from "@/components/hobbies";
+import { Hobbies } from "@/components/hobbies/hobbies";
 
 export default function Home() {
   return (

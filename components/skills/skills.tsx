@@ -5,7 +5,7 @@ import {
   TitleSectionReverse,
 } from "@/components/genericComponents";
 import { skills } from "@/public/data/Skills";
-import { IconWithTooltip } from "@/components/skills/IconWithTooltip";
+import { IconWithTooltipWithChip } from "@/components/skills/IconWithTooltipWithChip";
 
 export const Skills = () => {
   return (
@@ -24,7 +24,7 @@ export const Skills = () => {
               </Chip>
               <div className="flex flex-wrap gap-8 justify-start mt-4 mb-9">
                 {skill.icons.map((icon) => (
-                  <IconWithTooltip
+                  <IconWithTooltipWithChip
                     key={icon.tooltipText}
                     chipText={icon.chipText}
                     iconPath={icon.iconPath}

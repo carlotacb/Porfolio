@@ -1,6 +1,6 @@
 import { ContentBlock, TitleSection } from "@/components/genericComponents";
-import { CardWithText } from "@/components/about-me/cardWithText";
-import { ItemWithIcon } from "@/components/about-me/itemWithIcon";
+import { CardWithText } from "@/components/about-me/CardWithText";
+import { ItemWithIcon } from "@/components/about-me/ItemWithIcon";
 import { aboutBlocks } from "@/public/data/AboutMe";
 
 export const AboutMe = () => {

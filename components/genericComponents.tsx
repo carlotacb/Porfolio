@@ -29,7 +29,7 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { title } from "@/components/primitives";
 import { TimelineItem } from "@/public/data/Timeline";
-import { IconWithTooltip } from "@/components/skills/IconWithTooltip";
+import { IconWithTooltipWithChip } from "@/components/skills/IconWithTooltipWithChip";
 
 export function TitleSection(props: {
   color:
@@ -139,7 +139,7 @@ export function ProjectCard(props: {
         <div className="flex gap-2">
           {getTypeChip(type)}
           {Languages.map((lang) => (
-            <IconWithTooltip
+            <IconWithTooltipWithChip
               key={lang.tooltip}
               iconPath={`/icons/${lang.icon}.svg`}
               tooltipText={lang.tooltip}
@@ -297,42 +297,5 @@ export function TimelinePoint(props: TimelineItem) {
         </ModalContent>
       </Modal>
     </>
-  );
-}
-
-export function HobbieItem(props: {
-  icon: string;
-  text: string;
-  link?: string;
-  linkText?: string;
-}) {
-  const { icon, text, link, linkText } = props;
-
-  return (
-    <div className="flex flex-col items-center">
-      <img
-        alt={icon}
-        className="size-16 fill-current dark:invert"
-        src={`/icons/hobbies/${icon}.svg`}
-      />
-      <Chip className="mt-2" radius="sm" size="md" variant="solid">
-        {text}{" "}
-        {link ? (
-          <a
-            className="text-base hover:font-bold hover:text-blue-400"
-            href={link}
-            rel="noreferrer"
-            target="_blank"
-          >
-            {linkText}
-            <FontAwesomeIcon
-              className="ml-2"
-              icon={faArrowUpRightFromSquare}
-              size="xs"
-            />
-          </a>
-        ) : null}
-      </Chip>
-    </div>
   );
 }
