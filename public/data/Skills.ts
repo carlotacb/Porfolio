@@ -14,31 +14,31 @@ export const skills: SkillBlock[] = [
     title: "Programming Languages",
     icons: [
       {
-        iconPath: "/icons/langs/python.svg",
+        iconPath: "/langs/python",
         tooltipText: "Python",
       },
       {
-        iconPath: "/icons/langs/js.svg",
+        iconPath: "/langs/js",
         tooltipText: "JavaScript",
       },
       {
-        iconPath: "/icons/langs/ts.svg",
+        iconPath: "/langs/ts",
         tooltipText: "TypeScript",
       },
       {
-        iconPath: "/icons/langs/java.svg",
+        iconPath: "/langs/java",
         tooltipText: "Java",
       },
       {
-        iconPath: "/icons/langs/sql.svg",
+        iconPath: "/langs/sql",
         tooltipText: "SQL",
       },
       {
-        iconPath: "/icons/langs/cplusplus.svg",
+        iconPath: "/langs/cplusplus",
         tooltipText: "C++",
       },
       {
-        iconPath: "/icons/langs/go.svg",
+        iconPath: "/langs/go",
         tooltipText: "Golang",
       },
     ],
@@ -47,15 +47,15 @@ export const skills: SkillBlock[] = [
     title: "Frameworks",
     icons: [
       {
-        iconPath: "/icons/frameworks/django.svg",
+        iconPath: "/frameworks/django",
         tooltipText: "Django",
       },
       {
-        iconPath: "/icons/frameworks/nextjs.svg",
+        iconPath: "/frameworks/nextjs",
         tooltipText: "Next.js",
       },
       {
-        iconPath: "/icons/frameworks/vuejs.svg",
+        iconPath: "/frameworks/vuejs",
         tooltipText: "Vue",
       },
     ],
@@ -64,31 +64,31 @@ export const skills: SkillBlock[] = [
     title: "Miscellaneous",
     icons: [
       {
-        iconPath: "/icons/misc/git.svg",
+        iconPath: "/misc/git",
         tooltipText: "Git",
       },
       {
-        iconPath: "/icons/misc/html.svg",
+        iconPath: "/misc/html",
         tooltipText: "HTML",
       },
       {
-        iconPath: "/icons/misc/css.svg",
+        iconPath: "/misc/css",
         tooltipText: "CSS",
       },
       {
-        iconPath: "/icons/misc/styledcomponents.svg",
+        iconPath: "/misc/styledcomponents",
         tooltipText: "Styled Components",
       },
       {
-        iconPath: "/icons/misc/figma.svg",
+        iconPath: "/misc/figma",
         tooltipText: "Figma",
       },
       {
-        iconPath: "/icons/misc/markdown.svg",
+        iconPath: "/misc/markdown",
         tooltipText: "Markdown",
       },
       {
-        iconPath: "/icons/misc/latex.svg",
+        iconPath: "/misc/latex",
         tooltipText: "LaTex",
       },
     ],
@@ -97,15 +97,15 @@ export const skills: SkillBlock[] = [
     title: "DevOps",
     icons: [
       {
-        iconPath: "/icons/devops/aws.svg",
+        iconPath: "/devops/aws",
         tooltipText: "Amazon Web Services",
       },
       {
-        iconPath: "/icons/devops/gcloud.svg",
+        iconPath: "/devops/gcloud",
         tooltipText: "Google Cloud",
       },
       {
-        iconPath: "/icons/devops/docker.svg",
+        iconPath: "/devops/docker",
         tooltipText: "Docker",
       },
     ],
@@ -114,22 +114,22 @@ export const skills: SkillBlock[] = [
     title: "Languages",
     icons: [
       {
-        iconPath: "/icons/flags/cat.svg",
+        iconPath: "/flags/cat",
         tooltipText: "Catalan",
         chipText: "Native",
       },
       {
-        iconPath: "/icons/flags/sp.svg",
+        iconPath: "/flags/sp",
         tooltipText: "Spanish",
         chipText: "Native",
       },
       {
-        iconPath: "/icons/flags/uk.svg",
+        iconPath: "/flags/uk",
         tooltipText: "English",
         chipText: "B2/C1",
       },
       {
-        iconPath: "/icons/flags/ger.svg",
+        iconPath: "/flags/ger",
         tooltipText: "German",
         chipText: "Basic",
       },

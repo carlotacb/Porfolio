@@ -13,7 +13,11 @@ export function IconWithTooltipWithChip(props: iconInformation) {
         offset={10}
         showArrow={true}
       >
-        <img alt={tooltipText} className={"size-14"} src={iconPath} />
+        <img
+          alt={tooltipText}
+          className={"size-14"}
+          src={`/icons/${iconPath}.svg`}
+        />
       </Tooltip>
       {chipText ? (
         <Chip className={"mt-2"} radius="sm" size="sm" variant="bordered">

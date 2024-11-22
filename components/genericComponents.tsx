@@ -1,35 +1,17 @@
 import {
-  Card,
-  CardBody,
-  CardHeader,
-  Tooltip,
-  CardFooter,
-  Image,
-  Chip,
   Button,
   Modal,
+  ModalBody,
   ModalContent,
   ModalHeader,
-  ModalBody,
   useDisclosure,
 } from "@nextui-org/react";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useRef } from "react";
-import {
-  faArrowUpRightFromSquare,
-  faGamepad,
-  faGlobe,
-  faInfoCircle,
-  faLaptopCode,
-  faMobileScreenButton,
-  faTabletScreenButton,
-} from "@fortawesome/free-solid-svg-icons";
+import { faGlobe, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { title } from "@/components/primitives";
 import { TimelineItem } from "@/public/data/Timeline";
-import { IconWithTooltipWithChip } from "@/components/skills/IconWithTooltipWithChip";
 
 export function TitleSection(props: {
   color:
@@ -87,92 +69,6 @@ export function ContentBlock(props: { children: any }) {
   const { children } = props;
 
   return <div className="max-w-3xl">{children}</div>;
-}
-
-function getTypeChip(type: "Game" | "WebApp" | "Website" | "App" | "Other") {
-  let colorVar = "";
-  let iconVar = faLaptopCode;
-
-  if (type === "Website") {
-    iconVar = faGlobe;
-    colorVar = "bg-green-400";
-  } else if (type === "App") {
-    colorVar = "bg-orange-400";
-    iconVar = faMobileScreenButton;
-  } else if (type === "Game") {
-    iconVar = faGamepad;
-    colorVar = "bg-red-400";
-  } else if (type === "WebApp") {
-    colorVar = "bg-blue-400";
-    iconVar = faTabletScreenButton;
-  }
-
-  return (
-    <Chip
-      classNames={{ base: colorVar }}
-      radius="sm"
-      size="sm"
-      startContent={<FontAwesomeIcon className="mr-2 ml-1" icon={iconVar} />}
-      variant="shadow"
-    >
-      {type}
-    </Chip>
-  );
-}
-
-export function ProjectCard(props: {
-  type: "Game" | "WebApp" | "Website" | "App" | "Other";
-  projectName: string;
-  Languages: {
-    icon: string;
-    tooltip: string;
-  }[];
-  img: string;
-  description: string;
-  GHLink: string;
-}) {
-  const { type, projectName, Languages, img, description, GHLink } = props;
-
-  return (
-    <Card isFooterBlurred className="w-[350px] h-auto">
-      <CardHeader className="absolute z-10 top-1 flex-col items-start">
-        <div className="flex gap-2">
-          {getTypeChip(type)}
-          {Languages.map((lang) => (
-            <IconWithTooltipWithChip
-              key={lang.tooltip}
-              iconPath={`/icons/${lang.icon}.svg`}
-              tooltipText={lang.tooltip}
-            />
-          ))}
-        </div>
-        <h4 className="text-white/90 font-medium text-xl mt-1">
-          {projectName}
-        </h4>
-      </CardHeader>
-      <Image
-        removeWrapper
-        alt="Relaxing app background"
-        className="z-0 w-full h-full object-cover"
-        src={`/imgs/projects/${img}`}
-      />
-      <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
-        <p className="text-tiny text-white/60 ml-2">{description}</p>
-        <div>
-          <a href={GHLink} rel="noreferrer" target="_blank">
-            <Button
-              className="px-4 ml-2"
-              endContent={<img alt="git" src="/icons/misc/github.svg" />}
-              size="sm"
-              variant="shadow"
-            >
-              Code
-            </Button>
-          </a>
-        </div>
-      </CardFooter>
-    </Card>
-  );
 }
 
 export function TimelineIcon(props: { logoFileName: string }) {
