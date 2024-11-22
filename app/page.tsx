@@ -3,7 +3,7 @@
 import Typewriter from "typewriter-effect";
 
 import { title } from "@/components/primitives";
-import { AboutMe } from "@/components/about-me";
+import { AboutMe } from "@/components/about-me/about-me";
 import { Timeline } from "@/components/timeline";
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
