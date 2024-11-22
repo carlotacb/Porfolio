@@ -29,6 +29,7 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { title } from "@/components/primitives";
 import { TimelineItem } from "@/public/data/Timeline";
+import { IconWithTooltip } from "@/components/skills/IconWithTooltip";
 
 export function TitleSection(props: {
   color:
@@ -88,25 +89,6 @@ export function ContentBlock(props: { children: any }) {
   return <div className="max-w-3xl">{children}</div>;
 }
 
-export function IconWithTooltip(props: {
-  iconPath: string;
-  tooltipText: string;
-  size?: string;
-}) {
-  const { iconPath, tooltipText, size = "size-14" } = props;
-
-  return (
-    <Tooltip
-      color={"foreground"}
-      content={tooltipText}
-      offset={10}
-      showArrow={true}
-    >
-      <img alt={tooltipText} className={size} src={iconPath} />
-    </Tooltip>
-  );
-}
-
 function getTypeChip(type: "Game" | "WebApp" | "Website" | "App" | "Other") {
   let colorVar = "";
   let iconVar = faLaptopCode;
@@ -160,7 +142,6 @@ export function ProjectCard(props: {
             <IconWithTooltip
               key={lang.tooltip}
               iconPath={`/icons/${lang.icon}.svg`}
-              size={"size-6"}
               tooltipText={lang.tooltip}
             />
           ))}
