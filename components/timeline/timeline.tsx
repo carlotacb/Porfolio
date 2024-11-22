@@ -15,7 +15,7 @@ export const Timeline = () => {
   return (
     <>
       <TitleSection
-        color={"blue"}
+        color={"cyan"}
         textColor={"My"}
         textNoColor={"timeline ⏳"}
       />
