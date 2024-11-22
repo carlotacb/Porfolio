@@ -103,7 +103,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-16" id="resume">
+      <div className="py-16" id="projects">
         <Projects />
       </div>
     </section>

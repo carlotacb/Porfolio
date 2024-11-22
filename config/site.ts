@@ -5,20 +5,16 @@ export const siteConfig = {
   description: "",
   navItems: [
     {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "About",
+      label: "About me",
       href: "#about",
     },
     {
-      label: "Resume",
+      label: "Timeline",
       href: "#resume",
     },
     {
       label: "Projects",
-      href: "/blog",
+      href: "#projects",
     },
   ],
   navMenuItems: [
