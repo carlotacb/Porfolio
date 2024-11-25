@@ -3,14 +3,12 @@ import { Metadata, Viewport } from "next";
 import clsx from "clsx";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
+import Script from "next/script";
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
-import { GoogleAnalytics } from "@next/third-parties/google";
-
-import Clarity from "@microsoft/clarity";
 
 export const metadata: Metadata = {
   title: {
@@ -35,19 +33,26 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const projectId = "p44iaygpp4";
-
-  Clarity.init(projectId);
-
   return (
     <html suppressHydrationWarning lang="en">
-      <GoogleAnalytics gaId="G-678F0SCDE4" />
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
         )}
       >
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "p44iaygpp4");`,
+          }}
+          id="microsoft-clarity-init"
+          strategy="afterInteractive"
+        />
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative w-full h-screen overflow-y-auto">
             <div>
