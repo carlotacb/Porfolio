@@ -1,15 +1,16 @@
 import "@/styles/globals.css";
-import { Metadata, Viewport } from "next";
-import clsx from "clsx";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
+import clsx from "clsx";
 import Script from "next/script";
+import { Metadata, Viewport } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
-
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -41,6 +42,7 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
+        <SpeedInsights />
         <Script
           dangerouslySetInnerHTML={{
             __html: `
