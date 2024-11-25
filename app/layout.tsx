@@ -8,6 +8,9 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
+import Clarity from "@microsoft/clarity";
 
 export const metadata: Metadata = {
   title: {
@@ -32,8 +35,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const projectId = "p44iaygpp4";
+
+  Clarity.init(projectId);
+
   return (
     <html suppressHydrationWarning lang="en">
+      <GoogleAnalytics gaId="G-678F0SCDE4" />
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",

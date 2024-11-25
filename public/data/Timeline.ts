@@ -14,20 +14,6 @@ export interface TimelineItem {
 export const EducationTimeline: TimelineItem[] = [
   {
     active: false,
-    company: "TU Wien",
-    position: "Master in informatics engineering (Erasmus)",
-    startDate: "09/2021",
-    endDate: "02/2022",
-    description:
-      "During my master's, I did an Erasmus in Vienna to start my master thesis, as I was also working and due to some issues with my professor, I was unable to present the thesis in the Erasmus period, but my period abroad was great to learn about cultures, languages and more.",
-    icon: "tuwien",
-    website:
-      "https://www.tuwien.at/en/studies/international/incoming-exchange-students",
-    instagram: "https://www.instagram.com/tu_wien/",
-    linkedin: "https://www.linkedin.com/school/tuwien/posts/?feedView=all",
-  },
-  {
-    active: false,
     company: "UPC (FIB)",
     position: "Master in informatics engineering",
     startDate: "09/2019",
@@ -40,6 +26,20 @@ export const EducationTimeline: TimelineItem[] = [
     instagram: "https://www.instagram.com/fib.upc/",
     linkedin:
       "https://www.linkedin.com/school/universitat-politecnica-de-catalunya/",
+  },
+  {
+    active: false,
+    company: "TU Wien",
+    position: "Master in informatics engineering (Erasmus)",
+    startDate: "09/2021",
+    endDate: "02/2022",
+    description:
+      "During my master's, I did an Erasmus in Vienna to start my master thesis, as I was also working and due to some issues with my professor, I was unable to present the thesis in the Erasmus period, but my period abroad was great to learn about cultures, languages and more.",
+    icon: "tuwien",
+    website:
+      "https://www.tuwien.at/en/studies/international/incoming-exchange-students",
+    instagram: "https://www.instagram.com/tu_wien/",
+    linkedin: "https://www.linkedin.com/school/tuwien/posts/?feedView=all",
   },
   {
     active: false,
@@ -85,6 +85,31 @@ export const EducationTimeline: TimelineItem[] = [
 
 export const ProfessionalTimeline: TimelineItem[] = [
   {
+    active: true,
+    company: "UPC (FIB)",
+    position: "Associate professor",
+    startDate: "02/2022",
+    description:
+      "Professor in Web Applications and Services subject (3rd-year students from Software Engineer specialty), having a group of around 20 students. In the first half of the semester, they work in pairs, learning the basis of web development. In the second half, they work in groups of 4 by developing a project in 3 different assignments: <br /> <br /> 1. <b>Backend</b>, develop a full system copying an existing one, for example, HackerNews (with an MVC server-side framework that works without a client, for example: Django, Spring, Express, Ruby on Rails...). <br /> 2. <b>API</b>, modify the backend from the last assignment to convert it to API, endpoints returning JSON. Also, creating good documentation using swagger, and defining the structure and the error codes correctly. <br /><br /> 3. <b>Frontend</b>, using the endpoints from the 2nd assignment, create a front-end using JavaScript frameworks (React, Angular, or Vue). <br /><br /> My work as a teacher is mainly to guide, mentor, correct, and give feedback about how they could do a better job, so they can be great engineers.",
+    icon: "upc",
+    website: "https://www.fib.upc.edu/en",
+    instagram: "https://www.instagram.com/fib.upc/",
+    linkedin:
+      "https://www.linkedin.com/school/universitat-politecnica-de-catalunya/",
+  },
+  {
+    active: true,
+    company: "HackUPC",
+    position: "Hackathon organizer",
+    startDate: "02/2019",
+    description:
+      "During my years at Hackers@UPC, I worked with my team to run different events, but we worked harder, almost for a year, for the six editions of HackUPC. <br/><br/> Starting my journey in HackUPC 2019, I was a member of the logistics team. In HackUPC 2020/21 (canceled by COVID) I was promoted to logistics director, leading a team of 4 people. In HackUPC 2022 I was promoted to director, as well as in HackUPC 2023 (you can see more information in the specific card about it). And, in HackUPC 2024 we gave the lead to the following ones, going back to lead the logistics team, the web development team, and the finances. Finally, in 2025 I'm having a support role in the logistics and web development teams and leading the finances.",
+    icon: "hackers",
+    website: "https://hackupc.com/",
+    instagram: "https://www.instagram.com/hackupc",
+    linkedin: "https://linkedin.com/company/hack-upc",
+  },
+  {
     active: false,
     company: "Localboss",
     position: "Full-Stack Software Engineer and Product Owner",
@@ -98,17 +123,17 @@ export const ProfessionalTimeline: TimelineItem[] = [
     linkedin: "https://www.linkedin.com/company/localboss/posts/?feedView=all",
   },
   {
-    active: true,
-    company: "UPC (FIB)",
-    position: "Associate professor",
-    startDate: "02/2022",
+    active: false,
+    company: "HackUPC",
+    position: "Hackathon director",
+    startDate: "07/2021",
+    endDate: "07/2023",
     description:
-      "Professor in Web Applications and Services subject (3rd-year students from Software Engineer specialty), having a group of around 20 students. In the first half of the semester, they work in pairs, learning the basis of web development. In the second half, they work in groups of 4 by developing a project in 3 different assignments: <br /> <br /> 1. <b>Backend</b>, develop a full system copying an existing one, for example, HackerNews (with an MVC server-side framework that works without a client, for example: Django, Spring, Express, Ruby on Rails...). <br /> 2. <b>API</b>, modify the backend from the last assignment to convert it to API, endpoints returning JSON. Also, creating good documentation using swagger, and defining the structure and the error codes correctly. <br /><br /> 3. <b>Frontend</b>, using the endpoints from the 2nd assignment, create a front-end using JavaScript frameworks (React, Angular, or Vue). <br /><br /> My work as a teacher is mainly to guide, mentor, correct, and give feedback about how they could do a better job, so they can be great engineers.",
-    icon: "upc",
-    website: "https://www.fib.upc.edu/en",
-    instagram: "https://www.instagram.com/fib.upc/",
-    linkedin:
-      "https://www.linkedin.com/school/universitat-politecnica-de-catalunya/",
+      "During my years at Hackers@UPC, I had the opportunity to be the leader of the team for two years. After the pandemic, we faced the challenge of bringing back HackUPC at its best with the challenge of leading a team with a lack of motivation where everyone works as volunteers, without a salary. These two years we were able to do two editions. <br /><br /> <b>HackUPC 2022</b>: Co‑directed a team of 22 members, to organize Europe’s largest student hackathon, helping it regain momentum after the pandemic. Our maximum challenge was to motivate the team and lead them to create something amazing for our participants. <br /><br /><b>HackUPC 2023</b>: Co‑directed a team of 22 members, after being unable to find a successor, me and my co-director, we decided to run it again with the help of a 3rd member. Due to the lack of members with experience (since almost everyone from the previous team, left), I was also in charge of the logistics and finance team, to make the event grow back into a healthy, self‑sustaining organization. And after this edition, we can say we managed to create a healthy team, with the motivation and the knowledge to make HackUPC the greatest hackathon in Europe.",
+    icon: "hackers",
+    website: "https://hackupc.com/",
+    instagram: "https://www.instagram.com/hackupc",
+    linkedin: "https://linkedin.com/company/hack-upc",
   },
   {
     active: false,
@@ -139,30 +164,16 @@ export const ProfessionalTimeline: TimelineItem[] = [
   },
   {
     active: false,
-    company: "HackUPC",
-    position: "Hackathon director",
-    startDate: "07/2021",
-    endDate: "07/2023",
+    company: "HP",
+    position: "Graduate 3D software engineer",
+    startDate: "09/2019",
+    endDate: "08/2021",
     description:
-      "During my years at Hackers@UPC, I had the opportunity to be the leader of the team for two years. After the pandemic, we faced the challenge of bringing back HackUPC at its best with the challenge of leading a team with a lack of motivation where everyone works as volunteers, without a salary. These two years we were able to do two editions. <br /><br /> <b>HackUPC 2022</b>: Co‑directed a team of 22 members, to organize Europe’s largest student hackathon, helping it regain momentum after the pandemic. Our maximum challenge was to motivate the team and lead them to create something amazing for our participants. <br /><br /><b>HackUPC 2023</b>: Co‑directed a team of 22 members, after being unable to find a successor, me and my co-director, we decided to run it again with the help of a 3rd member. Due to the lack of members with experience (since almost everyone from the previous team, left), I was also in charge of the logistics and finance team, to make the event grow back into a healthy, self‑sustaining organization. And after this edition, we can say we managed to create a healthy team, with the motivation and the knowledge to make HackUPC the greatest hackathon in Europe.",
-    icon: "hackers",
-    website: "https://hackupc.com/",
-    instagram: "https://www.instagram.com/hackupc",
-    linkedin: "https://linkedin.com/company/hack-upc",
-  },
-  {
-    active: false,
-    company: "UPC (FIB)",
-    position: "Associate professor",
-    startDate: "02/2021",
-    endDate: "06/2021",
-    description:
-      "Professor in databases subject (2nd-year students) teaching about SQL, Triggers and procedures, and JDBC. In every class the students needed to do a deliverable, starting with a little quiz at the beginning of the class with a small question about the previous session, and then, during the remaining time, they started a deliverable about a new topic. <br /><br/> My work as a teacher is mainly to guide, mentor, correct, and give feedback about how they could do a better job, so they can be great engineers.",
-    icon: "upc",
-    website: "https://www.fib.upc.edu/en",
-    instagram: "https://www.instagram.com/fib.upc/",
-    linkedin:
-      "https://www.linkedin.com/school/universitat-politecnica-de-catalunya/",
+      "Member of the Software team inside the 3D organization, being a full-stack developer in different projects. Working mainly in React (Typescript) and Go.",
+    icon: "hp",
+    website: "https://www.hp.com/es-es/printers/3d-printers.html",
+    instagram: "https://www.instagram.com/hpespana/",
+    linkedin: "https://www.linkedin.com/company/hp/posts/?feedView=all",
   },
   {
     active: false,
@@ -178,28 +189,17 @@ export const ProfessionalTimeline: TimelineItem[] = [
   },
   {
     active: false,
-    company: "HP",
-    position: "Graduate 3D software engineer",
-    startDate: "09/2019",
-    endDate: "08/2021",
+    company: "UPC (FIB)",
+    position: "Associate professor",
+    startDate: "02/2021",
+    endDate: "06/2021",
     description:
-      "Member of the Software team inside the 3D organization, being a full-stack developer in different projects. Working mainly in React (Typescript) and Go.",
-    icon: "hp",
-    website: "https://www.hp.com/es-es/printers/3d-printers.html",
-    instagram: "https://www.instagram.com/hpespana/",
-    linkedin: "https://www.linkedin.com/company/hp/posts/?feedView=all",
-  },
-  {
-    active: true,
-    company: "HackUPC",
-    position: "Hackathon organizer",
-    startDate: "02/2019",
-    description:
-      "During my years at Hackers@UPC, I worked with my team to run different events, but we worked harder, almost for a year, for the six editions of HackUPC. <br/><br/> Starting my journey in HackUPC 2019, I was a member of the logistics team. In HackUPC 2020/21 (canceled by COVID) I was promoted to logistics director, leading a team of 4 people. In HackUPC 2022 I was promoted to director, as well as in HackUPC 2023. And, in HackUPC 2024 we gave the lead to the following ones, going back to lead the logistics team, the web development team, and the finances. Finally, in 2025 I'm having a support role in the logistics and web development teams and leading the finances.",
-    icon: "hackers",
-    website: "https://hackupc.com/",
-    instagram: "https://www.instagram.com/hackupc",
-    linkedin: "https://linkedin.com/company/hack-upc",
+      "Professor in databases subject (2nd-year students) teaching about SQL, Triggers and procedures, and JDBC. In every class the students needed to do a deliverable, starting with a little quiz at the beginning of the class with a small question about the previous session, and then, during the remaining time, they started a deliverable about a new topic. <br /><br/> My work as a teacher is mainly to guide, mentor, correct, and give feedback about how they could do a better job, so they can be great engineers.",
+    icon: "upc",
+    website: "https://www.fib.upc.edu/en",
+    instagram: "https://www.instagram.com/fib.upc/",
+    linkedin:
+      "https://www.linkedin.com/school/universitat-politecnica-de-catalunya/",
   },
   {
     active: false,
@@ -267,28 +267,15 @@ export const ExtraCurricularTimeline: TimelineItem[] = [
     instagram: "https://www.instagram.com/hackersupc/",
   },
   {
-    active: false,
-    company: "Kumon Methodology",
-    position: "Until L level",
-    startDate: "2012",
-    endDate: "2014",
+    active: true,
+    company: "Dance",
+    position: "Ballet classes",
+    startDate: "2002",
     description:
-      "Maths methodology, each level is a letter (the last one is O), I've started again and the last level I made was about functions.\n",
-    icon: "kumon",
-    website: "https://www.kumon.es/nuestros-programas/matematicas/",
-    instagram: "https://www.instagram.com/kumon.espana/",
-  },
-  {
-    active: false,
-    company: "Solfège",
-    position: "Until 5th middle grade",
-    startDate: "2006",
-    endDate: "2012",
-    description:
-      "Attending the Conservatori del Liceu Solfège lessons to take my exams and have a music title, the lessons were mandatory to take more difficult Piano classes with a concrete repertory to take my exams.",
-    icon: "conservatori",
-    website: "https://www.conservatoriliceu.es/escoles/pla-estudis/",
-    instagram: "https://www.instagram.com/conservatori.liceu/",
+      "Taking ballet classes since I was 4, reaching a semi-professional level during my university period, where I also started to take Spanish dance lessons. Nowadays, I dance as a hobby.",
+    icon: "isadora",
+    website: "http://studioisadora.com/",
+    instagram: "https://www.instagram.com/studioisadora",
   },
   {
     active: false,
@@ -303,6 +290,18 @@ export const ExtraCurricularTimeline: TimelineItem[] = [
   },
   {
     active: false,
+    company: "Kumon Methodology",
+    position: "Until L level",
+    startDate: "2012",
+    endDate: "2014",
+    description:
+      "Maths methodology, each level is a letter (the last one is O), I've started again and the last level I made was about functions.\n",
+    icon: "kumon",
+    website: "https://www.kumon.es/nuestros-programas/matematicas/",
+    instagram: "https://www.instagram.com/kumon.espana/",
+  },
+  {
+    active: false,
     company: "Piano",
     position: "Until 4th middle grade",
     startDate: "2002",
@@ -314,15 +313,16 @@ export const ExtraCurricularTimeline: TimelineItem[] = [
     instagram: "https://www.instagram.com/conservatori.liceu/",
   },
   {
-    active: true,
-    company: "Dance",
-    position: "Ballet classes",
-    startDate: "2002",
+    active: false,
+    company: "Solfège",
+    position: "Until 5th middle grade",
+    startDate: "2006",
+    endDate: "2012",
     description:
-      "Taking ballet classes since I was 4, reaching a semi-professional level during my university period, where I also started to take Spanish dance lessons. Nowadays, I dance as a hobby.",
-    icon: "isadora",
-    website: "http://studioisadora.com/",
-    instagram: "https://www.instagram.com/studioisadora",
+      "Attending the Conservatori del Liceu Solfège lessons to take my exams and have a music title, the lessons were mandatory to take more difficult Piano classes with a concrete repertory to take my exams.",
+    icon: "conservatori",
+    website: "https://www.conservatoriliceu.es/escoles/pla-estudis/",
+    instagram: "https://www.instagram.com/conservatori.liceu/",
   },
   {
     active: false,
