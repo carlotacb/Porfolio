@@ -3,6 +3,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import clsx from "clsx";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
 import { Metadata, Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -43,6 +44,7 @@ export default function RootLayout({
         )}
       >
         <SpeedInsights />
+        <Analytics />
         <Script
           dangerouslySetInnerHTML={{
             __html: `
