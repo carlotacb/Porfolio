@@ -17,7 +17,7 @@ export const Projects = () => {
         textColor={"Some"}
         textNoColor={"projects 👩🏻‍💻"}
       />
-      <div className="flex flex-wrap justify-center gap-4 max-w-6xl">
+      <div className="flex flex-wrap justify-center gap-4 max-w-6xl px-6">
         {MyProjectList.map((project, index) => (
           <ProjectCard
             key={index}

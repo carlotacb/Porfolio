@@ -37,7 +37,9 @@ export function TitleSection(props: {
         <span className={title({ size: "md" })}>{textNoColor}</span>
       </div>
       {subtitle ? (
-        <p className={"italic text-center text-gray-400 mt-2"}>{subtitle}</p>
+        <p className={"italic text-center text-gray-400 mt-2 px-6"}>
+          {subtitle}
+        </p>
       ) : null}
     </div>
   );
