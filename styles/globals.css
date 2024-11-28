@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 @property --countNum {
-    syntax: "<integer>";
-    initial-value: 0;
-    inherits: false;
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
 }
 
 @keyframes counter {
-    from {
-        --variable_number: 0;
-    }
-    to {
-        --variable_number: var(--countNum); /* Use var() for CSS variable */
-    }
+  from {
+    --variable_number: 0;
+  }
+  to {
+    --variable_number: var(--countNum); /* Use var() for CSS variable */
+  }
 }
 
 .counter-set {
-    counter-set: num var(--countNum); /* Corrected variable name */
+  counter-set: num var(--countNum); /* Corrected variable name */
 }

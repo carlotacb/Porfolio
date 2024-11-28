@@ -1,17 +1,4 @@
-import {
-  Button,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalHeader,
-  useDisclosure,
-} from "@nextui-org/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
 import { title } from "@/components/primitives";
-import { TimelineItem } from "@/public/data/Timeline";
 
 export function TitleSection(props: {
   color:
