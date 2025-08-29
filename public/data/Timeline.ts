@@ -86,11 +86,21 @@ export const EducationTimeline: TimelineItem[] = [
 export const ProfessionalTimeline: TimelineItem[] = [
   {
     active: true,
+    company: "UPC (GESSI)",
+    position: "Researcher",
+    startDate: "07/2025",
+    description:
+      "Starting out my predoctoral period by learning about the research world and starting to work in papers of the research group (GESSI)",
+    icon: "upc",
+    website: "https://gessi.upc.edu/en",
+  },
+  {
+    active: true,
     company: "UPC (FIB)",
     position: "Associate professor",
     startDate: "02/2022",
     description:
-      "Professor in Web Applications and Services subject (3rd-year students from Software Engineer specialty), having a group of around 20 students. In the first half of the semester, they work in pairs, learning the basis of web development. In the second half, they work in groups of 4 by developing a project in 3 different assignments: <br /> <br /> 1. <b>Backend</b>, develop a full system copying an existing one, for example, HackerNews (with an MVC server-side framework that works without a client, for example: Django, Spring, Express, Ruby on Rails...). <br /> 2. <b>API</b>, modify the backend from the last assignment to convert it to API, endpoints returning JSON. Also, creating good documentation using swagger, and defining the structure and the error codes correctly. <br /><br /> 3. <b>Frontend</b>, using the endpoints from the 2nd assignment, create a front-end using JavaScript frameworks (React, Angular, or Vue). <br /><br /> My work as a teacher is mainly to guide, mentor, correct, and give feedback about how they could do a better job, so they can be great engineers.",
+      "Professor in a Web Applications and Services subject (3rd-year students from Software Engineer specialty), having a group of around 20 students. In the first half of the semester, they work in pairs, learning the basis of web development. In the second half, they work in groups of 4 by developing a project in 3 different assignments: <br /> <br /> 1. <b>Backend</b>, develop a full system copying an existing one, for example, HackerNews (with an MVC server-side framework that works without a client, for example: Django, Spring, Express, Ruby on Rails...). <br /> 2. <b>API</b>, modify the backend from the last assignment to convert it to API, endpoints returning JSON. Also, creating good documentation using swagger, and defining the structure and the error codes correctly. <br /><br /> 3. <b>Frontend</b>, using the endpoints from the 2nd assignment, create a front-end using JavaScript frameworks (React, Angular, or Vue). <br /><br /> My work as a teacher is mainly to guide, mentor, correct, and give feedback about how they could do a better job, so they can be great engineers.",
     icon: "upc",
     website: "https://www.fib.upc.edu/en",
     instagram: "https://www.instagram.com/fib.upc/",
