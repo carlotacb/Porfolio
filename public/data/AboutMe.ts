@@ -66,13 +66,15 @@ export const aboutBlocks: AboutBlock[] = [
       },
       {
         icon: faTerminal,
-        targetNumber: 20,
+        targetNumber: 21,
         text: "hackathons",
+        link: "https://myhacks.carlotacb.dev/",
       },
       {
         icon: faPeopleGroup,
-        targetNumber: 12,
+        targetNumber: 11,
         text: "organized hackathons",
+        link: "https://myhacks.carlotacb.dev/",
       },
     ],
   },

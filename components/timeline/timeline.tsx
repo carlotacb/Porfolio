@@ -25,7 +25,9 @@ export const Timeline = () => {
           className={"px-6"}
           selectedKey={selected}
           variant={"bordered"}
-          onSelectionChange={(key) => setSelected(key.toString())}
+          onSelectionChange={(key) =>
+            setSelected(key?.toString() ?? "professional")
+          }
         >
           <Tab key="professional" title="Working">
             <div className="max-w-7xl px-6 min-w-[25rem] md:min-w-[50rem] lg:min-w-[60rem]">
