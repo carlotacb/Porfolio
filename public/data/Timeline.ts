@@ -13,6 +13,16 @@ export interface TimelineItem {
 
 export const EducationTimeline: TimelineItem[] = [
   {
+    active: true,
+    company: "UPC (FIB)",
+    position: "PhD",
+    startDate: "09/2025",
+    description: "",
+    icon: "upc",
+    instagram: "https://www.instagram.com/fib.upc/",
+    linkedin: "https://www.linkedin.com/school/universitat-politecnica-de-catalunya/",
+  },
+  {
     active: false,
     company: "UPC (FIB)",
     position: "Master in informatics engineering",
@@ -109,11 +119,24 @@ export const ProfessionalTimeline: TimelineItem[] = [
   },
   {
     active: true,
+    company: "ESADE",
+    position: "Associate professor",
+    startDate: "02/2025",
+    description:
+      "Professor in Programming with Data subject in the Bachelor in Business and Artificial Intelligence (1st-year students), having around 80 students. Teaching about python, object-oriented programming and good practices.",
+    icon: "esade",
+    website: "https://www.esade.edu/bachelor/en/programmes/double-degree-business-administration-artificial-intelligence-business",
+    instagram: "https://www.instagram.com/_esade/",
+    linkedin: "https://www.linkedin.com/school/esade/",
+  },
+  {
+    active: false,
     company: "HackUPC",
     position: "Hackathon organizer",
     startDate: "02/2019",
+    endDate: "08/2025",
     description:
-      "During my years at Hackers@UPC, I worked with my team to run different events, but we worked harder, almost for a year, for the six editions of HackUPC. <br/><br/> Starting my journey in HackUPC 2019, I was a member of the logistics team. In HackUPC 2020/21 (canceled by COVID) I was promoted to logistics director, leading a team of 4 people. In HackUPC 2022 I was promoted to director, as well as in HackUPC 2023 (you can see more information in the specific card about it). And, in HackUPC 2024 we gave the lead to the following ones, going back to lead the logistics team, the web development team, and the finances. Finally, in 2025 I'm having a support role in the logistics and web development teams and leading the finances.",
+      "During my years at Hackers@UPC, I worked with my team to run different events, but we worked harder, almost for a year, for the six editions of HackUPC. <br/><br/> Starting my journey in HackUPC 2019, I was a member of the logistics team. In HackUPC 2020/21 (canceled by COVID) I was promoted to logistics director, leading a team of 4 people. In HackUPC 2022 I was promoted to director, as well as in HackUPC 2023 (you can see more information in the specific card about it). And, in HackUPC 2024 we gave the lead to the following ones, going back to lead the logistics team, the web development team, and the finances. Finally, in 2025 I did a support role in the logistics and web development teams while leading the finances.",
     icon: "hackers",
     website: "https://hackupc.com/",
     instagram: "https://www.instagram.com/hackupc",
