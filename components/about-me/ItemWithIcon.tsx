@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+
 import { IconItem } from "@/public/data/AboutMe";
 
 export function ItemWithIcon(props: IconItem) {

@@ -10,6 +10,16 @@ import {
   faTerminal,
 } from "@fortawesome/free-solid-svg-icons";
 
+function ageFrom(birth: Date): number {
+  const today = new Date();
+  let age = today.getFullYear() - birth.getFullYear();
+  const monthDiff = today.getMonth() - birth.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+    age--;
+  }
+  return age;
+}
+
 export interface IconItem {
   icon: IconProp;
   text: string;
@@ -26,11 +36,11 @@ interface AboutBlock {
 export const aboutBlocks: AboutBlock[] = [
   {
     index: 0,
-    cardText: `I was born on May 7, 1996, in Barcelona, the eldest of three siblings. I'm a Software Engineer with a <b>Master’s in Informatics Engineering</b> at UPC (FIB). Currently, I'm working as an associate professor. Since I left my last job, I've been traveling around the world to learn more about different cultures, improve my English, and find a way to grow my career by building projects on my own. In my university life, I've been part of the HackUPC organizing team with a lot of roles, the most important one was co-directing for two years, and now in my last year, helping the new team with leadership and finances.`,
+    cardText: `I was born on May 7, 1996, in Barcelona, and I am the eldest of three siblings. I am currently a PhD student at the Universitat Politècnica de Catalunya (UPC), where I am part of the GESSI research group. Alongside my research, I work as an adjunct professor at both UPC and ESADE. <br/> <br/> I am also a Software Engineer, holding a Master’s degree in Informatics Engineering from UPC (FIB). In addition, I am part of the Major League Hacking Coach program, going to hackathons all over the world to help the organizers run the event smoothly and hackers to create amazing projects.`,
     items: [
       {
         icon: faBirthdayCake,
-        targetNumber: new Date().getFullYear() - 1996,
+        targetNumber: ageFrom(new Date(1996, 4, 7)),
         text: "years old",
       },
       {
@@ -39,12 +49,12 @@ export const aboutBlocks: AboutBlock[] = [
       },
       {
         icon: faLaptopCode,
-        targetNumber: new Date().getFullYear() - 2017 + 1,
+        targetNumber: ageFrom(new Date(2017, 7, 11)),
         text: "years working",
       },
       {
         icon: faPersonChalkboard,
-        targetNumber: new Date().getFullYear() - 2021 + 1,
+        targetNumber: ageFrom(new Date(2021, 2, 24)),
         text: "years teaching",
       },
     ],
@@ -61,7 +71,7 @@ export const aboutBlocks: AboutBlock[] = [
       },
       {
         icon: faMusic,
-        targetNumber: new Date().getFullYear() - 2001,
+        targetNumber: ageFrom(new Date(2001, 10, 1)),
         text: "years dancing",
       },
       {
@@ -73,7 +83,7 @@ export const aboutBlocks: AboutBlock[] = [
       {
         icon: faPeopleGroup,
         targetNumber: 11,
-        text: "organized hackathons",
+        text: "org. hackathons",
         link: "https://myhacks.carlotacb.dev/",
       },
     ],

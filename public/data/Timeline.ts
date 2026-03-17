@@ -20,7 +20,8 @@ export const EducationTimeline: TimelineItem[] = [
     description: "",
     icon: "upc",
     instagram: "https://www.instagram.com/fib.upc/",
-    linkedin: "https://www.linkedin.com/school/universitat-politecnica-de-catalunya/",
+    linkedin:
+      "https://www.linkedin.com/school/universitat-politecnica-de-catalunya/",
   },
   {
     active: false,
@@ -106,7 +107,7 @@ export const ProfessionalTimeline: TimelineItem[] = [
   },
   {
     active: true,
-    company: "MLH",
+    company: "Major League Hacking",
     position: "Event Coach",
     startDate: "02/2026",
     description:
@@ -135,7 +136,8 @@ export const ProfessionalTimeline: TimelineItem[] = [
     description:
       "Professor in Programming with Data subject in the Bachelor in Business and Artificial Intelligence (1st-year students), having around 80 students. Teaching about python, object-oriented programming and good practices.",
     icon: "esade",
-    website: "https://www.esade.edu/bachelor/en/programmes/double-degree-business-administration-artificial-intelligence-business",
+    website:
+      "https://www.esade.edu/bachelor/en/programmes/double-degree-business-administration-artificial-intelligence-business",
     instagram: "https://www.instagram.com/_esade/",
     linkedin: "https://www.linkedin.com/school/esade/",
   },
@@ -300,17 +302,6 @@ export const ProfessionalTimeline: TimelineItem[] = [
 export const ExtraCurricularTimeline: TimelineItem[] = [
   {
     active: true,
-    company: "Hackers@UPC",
-    position: "Member of a university association",
-    startDate: "2019",
-    description:
-      "Member of Hackers@UPC, organizing events and hackathons like HackUPC, BitsxLaMarato, HackNights, HackFromHome, Talks, and more. <br /><br /> Being part of the association gave me experience in leadership, organization, and decision-making in hard situations.",
-    icon: "hackers",
-    website: "https://hackersatupc.org/ ",
-    instagram: "https://www.instagram.com/hackersupc/",
-  },
-  {
-    active: true,
     company: "Dance",
     position: "Ballet classes",
     startDate: "2002",
@@ -319,6 +310,18 @@ export const ExtraCurricularTimeline: TimelineItem[] = [
     icon: "isadora",
     website: "http://studioisadora.com/",
     instagram: "https://www.instagram.com/studioisadora",
+  },
+  {
+    active: false,
+    company: "Hackers@UPC",
+    position: "Member of a university association",
+    startDate: "2019",
+    endDate: "2025",
+    description:
+      "Member of Hackers@UPC, organizing events and hackathons like HackUPC, BitsxLaMarato, HackNights, HackFromHome, Talks, and more. <br /><br /> Being part of the association gave me experience in leadership, organization, and decision-making in hard situations.",
+    icon: "hackers",
+    website: "https://hackersatupc.org/ ",
+    instagram: "https://www.instagram.com/hackersupc/",
   },
   {
     active: false,
