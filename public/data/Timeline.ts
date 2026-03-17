@@ -90,9 +90,19 @@ export const ProfessionalTimeline: TimelineItem[] = [
     position: "Researcher",
     startDate: "07/2025",
     description:
-      "Starting out my predoctoral period by learning about the research world and starting to work in papers of the research group (GESSI)",
+      "Starting out my phd period by learning about the research world and starting to work in papers of the research group (GESSI)",
     icon: "upc",
     website: "https://gessi.upc.edu/en",
+  },
+  {
+    active: true,
+    company: "MLH",
+    position: "Event Coach",
+    startDate: "02/2026",
+    description:
+      "After my experience in HackUPC, now I became an event coach for MLH, where I help different hackathons around the world to be the best they can be, giving them advice and help during the event.",
+    icon: "mlh",
+    website: "https://mlh.io/",
   },
   {
     active: true,
