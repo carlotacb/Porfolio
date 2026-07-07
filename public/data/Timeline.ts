@@ -9,6 +9,7 @@ export interface TimelineItem {
   website?: string;
   instagram?: string;
   linkedin?: string;
+  smaller?: boolean;
 }
 
 export const EducationTimeline: TimelineItem[] = [
@@ -131,7 +132,7 @@ export const ProfessionalTimeline: TimelineItem[] = [
   {
     active: true,
     company: "ESADE",
-    position: "Associate professor",
+    position: "Associate professor - Subject coordinator",
     startDate: "02/2025",
     description:
       "Professor in Programming with Data subject in the Bachelor in Business and Artificial Intelligence (1st-year students), having around 80 students. Teaching about python, object-oriented programming and good practices.",
@@ -231,6 +232,7 @@ export const ProfessionalTimeline: TimelineItem[] = [
     icon: "isadora",
     website: "http://studioisadora.com/",
     instagram: "https://www.instagram.com/studioisadora",
+    smaller: true,
   },
   {
     active: false,
@@ -296,6 +298,7 @@ export const ProfessionalTimeline: TimelineItem[] = [
     icon: "isadora",
     website: "http://studioisadora.com/",
     instagram: "https://www.instagram.com/studioisadora",
+    smaller: true,
   },
 ];
 

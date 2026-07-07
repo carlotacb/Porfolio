@@ -18,6 +18,7 @@ export function TimelineCard(props: TimelineItem) {
     website,
     instagram,
     linkedin,
+    smaller,
   } = props;
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -26,7 +27,7 @@ export function TimelineCard(props: TimelineItem) {
       <div
         className={`relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group ${active ? "is-active" : null}`}
       >
-        <TimelineIcon logoFileName={icon} />
+        <TimelineIcon logoFileName={icon} small={smaller} />
         <div className="w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] bg-default group-[.is-active]:dark:bg-sky-950 group-[.is-active]:bg-sky-200 p-4 rounded shadow">
           <div className={"flex justify-end"}>
             <time className="font-caveat font-medium text-sm italic">

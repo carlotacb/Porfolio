@@ -32,7 +32,7 @@ export const hobbiesList: Hobby[] = [
   },
   {
     icon: "soccer",
-    text: "Soccer",
+    text: "Football",
   },
   {
     icon: "events",
@@ -41,7 +41,7 @@ export const hobbiesList: Hobby[] = [
   {
     icon: "boat",
     link: "https://www.transportes.gob.es/marina-mercante/titulaciones/titulaciones-de-recreo/titulos/patron-de-embarcaciones-recreo/patron-de-embarcaciones-de-recreo-per",
-    linkText: "PER title",
+    linkText: "(PER)",
     text: "Sailing - ",
   },
 ];

@@ -1,5 +1,5 @@
-export function TimelineIcon(props: { logoFileName: string }) {
-  const { logoFileName } = props;
+export function TimelineIcon(props: { logoFileName: string; small?: boolean }) {
+  const { logoFileName, small } = props;
 
   return (
     <div
@@ -7,7 +7,7 @@ export function TimelineIcon(props: { logoFileName: string }) {
     >
       <img
         alt={logoFileName}
-        className={"w-[60%]"}
+        className={small ? "w-[30%]" : "w-[60%]"}
         src={`/imgs/timeline/${logoFileName}.webp`}
       />
     </div>
