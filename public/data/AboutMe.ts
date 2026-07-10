@@ -5,7 +5,6 @@ import {
   faLaptopCode,
   faMap,
   faMusic,
-  faPeopleGroup,
   faPersonChalkboard,
   faTerminal,
 } from "@fortawesome/free-solid-svg-icons";
@@ -49,12 +48,12 @@ export const aboutBlocks: AboutBlock[] = [
       },
       {
         icon: faLaptopCode,
-        targetNumber: ageFrom(new Date(2017, 7, 11)),
+        targetNumber: ageFrom(new Date(2017, 6, 11)),
         text: "years working",
       },
       {
         icon: faPersonChalkboard,
-        targetNumber: ageFrom(new Date(2021, 2, 24)),
+        targetNumber: ageFrom(new Date(2021, 1, 24)),
         text: "years teaching",
       },
     ],
@@ -71,19 +70,13 @@ export const aboutBlocks: AboutBlock[] = [
       },
       {
         icon: faMusic,
-        targetNumber: ageFrom(new Date(2001, 10, 1)),
+        targetNumber: ageFrom(new Date(2000, 9, 1)),
         text: "years dancing",
       },
       {
         icon: faTerminal,
-        targetNumber: 21,
+        targetNumber: 37,
         text: "hackathons",
-        link: "https://myhacks.carlotacb.dev/",
-      },
-      {
-        icon: faPeopleGroup,
-        targetNumber: 11,
-        text: "org. hackathons",
         link: "https://myhacks.carlotacb.dev/",
       },
     ],
