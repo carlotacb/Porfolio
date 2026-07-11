@@ -16,7 +16,7 @@ export const EducationTimeline: TimelineItem[] = [
   {
     active: true,
     company: "UPC (FIB)",
-    position: "PhD",
+    position: "PhD student in Comput",
     startDate: "09/2025",
     description: "",
     icon: "upc",
@@ -119,7 +119,7 @@ export const ProfessionalTimeline: TimelineItem[] = [
   {
     active: true,
     company: "UPC (FIB)",
-    position: "Associate professor",
+    position: "Adjunct professor",
     startDate: "02/2022",
     description:
       "Professor in a Web Applications and Services subject (3rd-year students from Software Engineer specialty), having a group of around 20 students. In the first half of the semester, they work in pairs, learning the basis of web development. In the second half, they work in groups of 4 by developing a project in 3 different assignments: <br /> <br /> 1. <b>Backend</b>, develop a full system copying an existing one, for example, HackerNews (with an MVC server-side framework that works without a client, for example: Django, Spring, Express, Ruby on Rails...). <br /> 2. <b>API</b>, modify the backend from the last assignment to convert it to API, endpoints returning JSON. Also, creating good documentation using swagger, and defining the structure and the error codes correctly. <br /><br /> 3. <b>Frontend</b>, using the endpoints from the 2nd assignment, create a front-end using JavaScript frameworks (React, Angular, or Vue). <br /><br /> My work as a teacher is mainly to guide, mentor, correct, and give feedback about how they could do a better job, so they can be great engineers.",
@@ -132,7 +132,7 @@ export const ProfessionalTimeline: TimelineItem[] = [
   {
     active: true,
     company: "ESADE",
-    position: "Associate professor - Subject coordinator",
+    position: "Adjunct professor - Course coordinator",
     startDate: "02/2025",
     description:
       "Professor in Programming with Data subject in the Bachelor in Business and Artificial Intelligence (1st-year students), having around 80 students. Teaching about python, object-oriented programming and good practices.",
@@ -198,7 +198,7 @@ export const ProfessionalTimeline: TimelineItem[] = [
   {
     active: false,
     company: "UOC",
-    position: "Associate professor",
+    position: "Adjunct professor",
     startDate: "09/2021",
     endDate: "02/2022",
     description:
@@ -237,7 +237,7 @@ export const ProfessionalTimeline: TimelineItem[] = [
   {
     active: false,
     company: "UPC (FIB)",
-    position: "Associate professor",
+    position: "Adjunct professor",
     startDate: "02/2021",
     endDate: "06/2021",
     description:
@@ -313,6 +313,7 @@ export const ExtraCurricularTimeline: TimelineItem[] = [
     icon: "isadora",
     website: "http://studioisadora.com/",
     instagram: "https://www.instagram.com/studioisadora",
+    smaller: true,
   },
   {
     active: false,

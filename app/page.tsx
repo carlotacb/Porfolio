@@ -39,10 +39,9 @@ export default function Home() {
             options={{
               strings: [
                 "Software Engineer",
-                "Full-Stack Developer",
-                "Associate Professor",
-                "Entrepreneur",
-                "Hackathon Organizer",
+                "PhD Student",
+                "Adjunct Professor",
+                "Hackathon Coach",
                 "Traveler",
                 "Classical Ballet Dancer",
                 "Music Lover",
